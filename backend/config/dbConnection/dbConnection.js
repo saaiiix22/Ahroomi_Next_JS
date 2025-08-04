@@ -10,7 +10,6 @@ const dbConn = async () => {
     console.error('DB_URL is undefined.');
     return;
   }
-
   try {
     await mongoose.connect(DB_URL);
     console.log('DB Connected Successfully');
