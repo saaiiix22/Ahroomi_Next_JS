@@ -1,0 +1,29 @@
+.headerWeb {
+    background-color: #D5E5D5;
+    padding: 7px;
+    text-align: center;
+}
+
+.headerText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: nowrap;
+}
+
+.headerText li {
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+}
+
+.headerText li::before {
+    content: '';
+    position: absolute;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #565656;
+    left: -12px;
+    top: 7px;
+}
