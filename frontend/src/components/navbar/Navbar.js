@@ -1,64 +1,50 @@
+'use client';
 import Link from 'next/link';
+import { useState } from 'react';
 import styles from './navbar.module.css';
+import MegaMenu from '../megamenu/MegaMenu';
 
 export default function Navbar() {
-    const { logoParent, navList, navItem, submenu, submenuItem, navItemWithSubmenu } = styles;
+  const { logoParent, navList, navItem, navItemWithSubmenu, searchInp } = styles;
+  const [showMegaMenu, setShowMegaMenu] = useState(false);
 
-    const navItems = [
-        { label: 'Homepage', href: '/homepage' },
-        {
-            label: 'Dashboard',
-            href: '/',
-            submenu: [
-                { label: 'Overview', href: '/dashboard/overview' },
-                { label: 'Reports', href: '/dashboard/reports' },
-            ],
-        },
-        { label: 'About', href: '/about' },
-    ];
+  const handleMenuClick = () => {
+    setShowMegaMenu(!showMegaMenu);
+  };
 
-    return (
-        <nav className="p-4 px-6 md:px-20 bg-white shadow-md">
-            <div className="grid grid-cols-12 items-center">
-                <div className="md:col-span-4 flex justify-center md:justify-start">
-                    <div className={logoParent}>
-                        <img src="/images/ahroomiLogo.png" alt="Logo" className="h-10" />
-                    </div>
-                </div>
+  return (
+    <nav className="p-4 px-6 md:px-20 bg-white shadow-md relative z-50">
+      <div className="grid grid-cols-12 items-center">
+        <div className="md:col-span-4 flex justify-center md:justify-start">
+          <div className={logoParent}>
+            <img src="/images/ahroomiLogo.png" alt="Logo" className="h-10" />
+          </div>
+        </div>
 
-                <div className="md:col-span-4">
-                    <ul className={navList}>
-                        {navItems.map((item) => (
-                            <li
-                                key={item.href}
-                                className={item.submenu ? navItemWithSubmenu : navItem}
-                            >
-                                <Link href={item.href}>{item.label}</Link>
+        <div className="md:col-span-4">
+          <ul className={navList}>
+            <li className={navItem}>
+              <Link href="/homepage">Home</Link>
+            </li>
+            <li className={navItemWithSubmenu}>
+              <button type="button" onClick={handleMenuClick}>
+                Shop
+              </button>
+            </li>
+            <li className={navItem}>
+              <Link href="/about">About Us</Link>
+            </li>
+          </ul>
+        </div>
 
-                                {item.submenu && (
-                                    <ul className={submenu}>
-                                        {item.submenu.map((subItem) => (
-                                            <li key={subItem.href} className={submenuItem}>
-                                                <Link href={subItem.href}>{subItem.label}</Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+        <div className="md:col-span-4 flex justify-center items-center">
+          <form>
+            <input className={searchInp} placeholder="Search Here" name="search" />
+          </form>
+        </div>
+      </div>
 
-                <div className="md:col-span-4 flex justify-center items-center">
-                    <form>
-                        <input
-                            className="border-solid border-gray-300 border-2 rounded-md w-96 py-2 px-4"
-                            placeholder="Search Here"
-                            name=""
-                        />
-                    </form>
-                </div>
-            </div>
-        </nav>
-    );
+      <MegaMenu visible={showMegaMenu} />
+    </nav>
+  );
 }

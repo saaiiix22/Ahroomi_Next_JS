@@ -1,3 +1,9 @@
+import CarouselParent from "@/components/carouselparent/CarouselParent";
+
 export default function DashboardPage() {
-  return <h1 className="p-4">HOME PAGE</h1>
+  return (
+    <div>
+      <CarouselParent />
+    </div>
+  )
 }

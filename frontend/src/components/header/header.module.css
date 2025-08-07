@@ -1,29 +1,46 @@
 .headerWeb {
     background-color: #D5E5D5;
     padding: 7px;
+    overflow: hidden; 
     text-align: center;
+    position: relative;
+}
+
+.scrollWrapper {
+    width: 100%;
+    overflow: hidden;
 }
 
 .headerText {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 35px;
-    flex-wrap: nowrap;
+    white-space: nowrap;
+    animation: scrollText 22s linear infinite;
 }
 
 .headerText li {
     font-size: 12px;
     font-weight: 500;
     position: relative;
+    display: inline-block;
 }
 
 .headerText li::before {
     content: '';
     position: absolute;
-    padding: 3px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background-color: #565656;
     left: -12px;
     top: 7px;
+}
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }

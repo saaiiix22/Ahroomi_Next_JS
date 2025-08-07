@@ -1,52 +1,65 @@
 .logoParent {
-    width: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navList {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
-    .navList {
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 0;
-    }
+  .navList {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+  }
 }
 
 .navItem {
-    position: relative;
+  position: relative;
 }
 
 .navItemWithSubmenu {
-    position: relative;
+  position: relative;
 }
 
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 160px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 0.375rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+.megaMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 75vw;
+  background-color: #fff;
+  padding: 2rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-.navItemWithSubmenu:hover .submenu {
-    display: block;
+.navItemWithSubmenu:hover .megaMenu {
+  display: block;
 }
 
 .submenuItem {
-    padding: 0.5rem 1rem;
+  display: block;
+  padding: 0.25rem 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
 }
 
 .submenuItem:hover {
-    background-color: #f5f5f5;
+  color: #000;
+}
+
+.searchInp {
+  padding: 4px 100px 4px 7px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
