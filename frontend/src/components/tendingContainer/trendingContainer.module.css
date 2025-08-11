@@ -1,0 +1,35 @@
+.trendingContainer {
+  margin: 15px 0px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 14px;
+}
+
+.trendingContainer::-webkit-scrollbar {
+  height: 6px;
+}
+
+.trendingContainer::-webkit-scrollbar-track {
+  background: #15be7b4b;
+}
+
+.trendingContainer::-webkit-scrollbar-thumb {
+  background: #275140;
+  border-radius: 4px;
+}
+
+.trendingContainer::-webkit-scrollbar-thumb:hover {
+  background: #275140;
+}
+.trendingContainer::-webkit-scrollbar-track-piece:start {
+  margin-left: 12.5%; 
+}
+
+.trendingContainer::-webkit-scrollbar-track-piece:end {
+  margin-right: 12.5%;
+}

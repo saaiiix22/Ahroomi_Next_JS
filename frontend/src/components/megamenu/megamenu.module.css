@@ -21,6 +21,5 @@
 
 .submenuItem:hover {
   color: #a3a1a1;
-  font-weight: 500;
   transform: translateX(10px);
 }

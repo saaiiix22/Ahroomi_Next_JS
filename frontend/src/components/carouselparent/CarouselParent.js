@@ -27,24 +27,26 @@ export default function CarouselParent() {
         <div className={carouselParent}>
             <Carousel
                 responsive={responsive}
-                infinite={true}   
-                autoPlay={true} 
-                autoPlaySpeed={2000} 
-                
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={2000}
+                arrows={false}
+                className='rounded-md'
             >
                 <div className={item}>
-                    <img src={'https://setmycart.blob.core.windows.net/smcproduction//7-1-2025/821333bdd6154eeba5fe387d3d132922/Asset%203.webp'}/>
+                    <img src={'https://setmycart.blob.core.windows.net/smcproduction//7-1-2025/821333bdd6154eeba5fe387d3d132922/Asset%203.webp'} />
                 </div>
                 <div className={item}>
-                    <img src={'https://setmycart.blob.core.windows.net/smcproduction//7-1-2025/821333bdd6154eeba5fe387d3d132922/Asset%203.webp'}/>
+                    <img src={'https://setmycart.blob.core.windows.net/smcproduction//7-1-2025/821333bdd6154eeba5fe387d3d132922/Asset%203.webp'} />
                 </div>
                 <div className={item}>
-                    <img src={'https://setmycart.blob.core.windows.net/smcproduction//7-1-2025/821333bdd6154eeba5fe387d3d132922/Asset%203.webp'}/>
+                    <img src={'https://setmycart.blob.core.windows.net/smcproduction//7-1-2025/821333bdd6154eeba5fe387d3d132922/Asset%203.webp'} />
                 </div>
                 <div className={item}>
-                    <img src={'https://setmycart.blob.core.windows.net/smcproduction//7-1-2025/821333bdd6154eeba5fe387d3d132922/Asset%203.webp'}/>
+                    <img src={'https://setmycart.blob.core.windows.net/smcproduction//7-1-2025/821333bdd6154eeba5fe387d3d132922/Asset%203.webp'} />
                 </div>
             </Carousel>
+            
         </div>
     );
 }

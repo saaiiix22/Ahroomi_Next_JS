@@ -3,14 +3,16 @@ import Link from 'next/link';
 import { useState } from 'react';
 import styles from './navbar.module.css';
 import MegaMenu from '../megamenu/MegaMenu';
+import { FiSearch } from "react-icons/fi";
 
 export default function Navbar() {
-  const { logoParent, navList, navItem, navItemWithSubmenu, searchInp } = styles;
+  const { logoParent, navList, navItem, navItemWithSubmenu, searchSubmit, inputContainer, searchInput } = styles;
   const [showMegaMenu, setShowMegaMenu] = useState(false);
 
   const handleMenuClick = () => {
     setShowMegaMenu(!showMegaMenu);
   };
+
 
   return (
     <nav className="p-4 px-6 md:px-20 bg-white shadow-md relative z-50">
@@ -27,7 +29,7 @@ export default function Navbar() {
               <Link href="/homepage">Home</Link>
             </li>
             <li className={navItemWithSubmenu}>
-              <button type="button" onClick={handleMenuClick}>
+              <button type="button" onMouseEnter={handleMenuClick} >
                 Shop
               </button>
             </li>
@@ -38,8 +40,19 @@ export default function Navbar() {
         </div>
 
         <div className="md:col-span-4 flex justify-center items-center">
-          <form>
-            <input className={searchInp} placeholder="Search Here" name="search" />
+          <form role="search" method="get" action="">
+            <div className={inputContainer}>
+              <input
+                type="search"
+                className={searchInput}
+                name="s"
+                placeholder="Search entire website..."
+              />
+              <button type="submit" className={styles.searchSubmit} name="submit">
+                {/* <i className="material-icons">search</i> */}
+                <FiSearch />
+              </button>
+            </div>
           </form>
         </div>
       </div>
