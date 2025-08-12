@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
+
+.aboutContent {
+    padding: 100px;
+    background-image: url(/images/moringaBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutContent::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #27514093;
+}
+
+.mScienceText {
+    z-index: 99;
+    max-width: 600px;
+    text-align: justify;
+    position: relative;
+    color: #faebd7;
+    padding: 36px;
+    background-color: #00000026;
+    border-radius: 5px;
+}
+
+.mScienceText h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+    border-left: 10px solid #faebd763;
+}
+
+.mScienceText p {
+    font-size: 18px;
+}
+.logoParent{
+    z-index: 99;
+    filter: invert(93%) sepia(7%) saturate(273%) hue-rotate(326deg) brightness(98%) contrast(92%);
+}

@@ -5,7 +5,7 @@ import styles from './megamenu.module.css';
 export default function MegaMenu({ visible }) {
   if (!visible) return null;
 
-  const { megaMenu, submenuItem } = styles;
+  const { megaMenu, submenuItem, megaMenuNav } = styles;
 
   const megaMenuData = {
     essentials: [
@@ -35,7 +35,7 @@ export default function MegaMenu({ visible }) {
     <div className={megaMenu}>
       <div className="max-w-screen-xl mx-auto grid grid-cols-4 gap-8 px-10 py-6">
         <div>
-          <h4 className="font-semibold mb-2">Your Essentials</h4>
+          <h4 className={megaMenuNav}>Your Essentials</h4>
           {megaMenuData.essentials.map((item) => (
             <Link key={item.href}  href={item.href} className={submenuItem}>
               {item.label}
@@ -44,7 +44,7 @@ export default function MegaMenu({ visible }) {
         </div>
 
         <div>
-          <h4 className="font-semibold mb-2">Routines</h4>
+          <h4 className={megaMenuNav}>Routines</h4>
           {megaMenuData.routines.map((item) => (
             <Link key={item.href} href={item.href} className={submenuItem}>
               {item.label}
@@ -53,7 +53,7 @@ export default function MegaMenu({ visible }) {
         </div>
 
         <div>
-          <h4 className="font-semibold mb-2">New Launches</h4>
+          <h4 className={megaMenuNav}>New Launches</h4>
           {megaMenuData.launches.map((item) => (
             <Link key={item.href} href={item.href} className={submenuItem}>
               {item.label}

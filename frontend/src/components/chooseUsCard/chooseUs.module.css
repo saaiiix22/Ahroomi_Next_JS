@@ -1,0 +1,28 @@
+.individualCard {
+    padding: 14px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.individualCard h4 {
+    line-height: 30px;
+    font-size: 20px;
+    color: #275140;
+}
+
+.individualCard p {
+    text-align: center;
+    font-size: 14px;
+    color: #a3b7a3;
+    margin-bottom: 5px;
+}
+.individualCard div {
+    width: 160px;
+}
+.individualCard div img {
+    width: 100%;
+}

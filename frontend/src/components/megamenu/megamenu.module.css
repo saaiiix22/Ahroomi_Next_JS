@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
+
 .megaMenu {
   position: absolute;
   top: 100%;
@@ -8,18 +10,29 @@
   padding: 2rem 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 999;
+  font-family: "Raleway", sans-serif;
 }
 
 .submenuItem {
   display: block;
   padding: 0.25rem 0;
-  color: #333;
+  color: #0b6340;
   text-decoration: none;
   font-size: 0.95rem;
   transition: all .2s ease-in-out;
 }
 
 .submenuItem:hover {
-  color: #a3a1a1;
+  /* color: #a3a1a1; */
+  color: #c2a878;
   transform: translateX(10px);
+  cursor: pointer;
+}
+.megaMenuNav{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  cursor: pointer;
+  
+  color: #275140;
 }
