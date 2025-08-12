@@ -1,0 +1,23 @@
+.homeHead {
+    font-size: 35px;
+    text-align: center;
+    color: #275140;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    margin-bottom: 22px;
+    text-transform: capitalize;
+}
+
+.homeHead::after {
+    content: '';
+    height: 50px;
+    width: 137px;
+    position: absolute;
+    bottom: -29px;
+    left: 46%;
+    background-repeat: no-repeat;
+    background-image: url(/images/borderBottom.png);
+    background-position: center;
+    background-size: contain;
+}

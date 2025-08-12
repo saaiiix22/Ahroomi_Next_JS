@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="grid grid-cols-12 items-center">
         <div className="md:col-span-4 flex justify-center md:justify-start">
           <div className={logoParent}>
-            <img src="/images/ahroomiLogo.png" alt="Logo" className="h-10" />
+            <img src="/images/ahroomiLogo.png" alt="Logo" />
           </div>
         </div>
 

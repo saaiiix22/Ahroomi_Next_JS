@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: rgb(149 157 165 / 7%) 0px 8px 24px;
+    border: 1px solid #d5e5d56e;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 10px;
+    font-family: "Raleway", sans-serif;
+}
+
+.imgParent {
+    background: #d5e5d5;
+    padding: 13px;
+    border-radius: 22px 20px 0px 0px;
+    position: relative;
+}
+
+.imgParent::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background-image: url(/images/moringaBg.jpg); */
+    background-image: url(/images/reviewBg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    border-radius: 22px 20px 0px 0px;
+}
+
+.avatar {
+    border-radius: 50%;
+    z-index: 22;
+    position: relative;
+
+}
+
+.heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #275140;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.footer {
+    margin-top: auto;
+    font-size: 0.85rem;
+    color: gray;
+    text-align: end;
+    text-transform: capitalize;
+}
+
+.footer strong {
+    color: #275140;
+}
+
+.footer span {
+    color: #a1b9a1;
+}
