@@ -37,7 +37,7 @@ export default function MegaMenu({ visible }) {
         <div>
           <h4 className="font-semibold mb-2">Your Essentials</h4>
           {megaMenuData.essentials.map((item) => (
-            <Link key={item.href} href={item.href} className={submenuItem}>
+            <Link key={item.href}  href={item.href} className={submenuItem}>
               {item.label}
             </Link>
           ))}
