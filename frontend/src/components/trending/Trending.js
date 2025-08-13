@@ -8,7 +8,7 @@ export default function Trending() {
             <div className={circle}>
                 <img
                     alt="Trending"
-                    src="https://nathabit.in/_nat/images/year_end_campaign_collection_e41b7e5e66.jpg?format=auto&width=1920&quality=75"
+                    src="https://setmycart.blob.core.windows.net/smcproduction//7-23-2025/181cc034425847b79b4bd1f75c0bb941/MUSK_100_ML_1.jpg"
                     sizes="20vw"
                 />
             </div>
