@@ -9,6 +9,7 @@ import MScience from "@/components/mScience/MScience";
 import ChooseUs from "@/components/chooseUs/ChooseUs";
 import BasicSpeedDial from "@/components/basicSpeedDial/BasicSpeedDial";
 import ReviewCustomer from "@/components/reviewsCustomer/ReviewsCustomer";
+import NewsLetter from "@/components/newsLetter/NewsLetter";
 
 export default function HomePage() {
   const { homeContainer } = Styles;
@@ -31,6 +32,7 @@ export default function HomePage() {
         <ChooseUs />
         <BasicSpeedDial />
         <ReviewCustomer />
+        <NewsLetter/>
       </div>
     </>
   );

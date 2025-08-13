@@ -28,11 +28,29 @@
   transform: translateX(10px);
   cursor: pointer;
 }
-.megaMenuNav{
+
+.megaMenuNav {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
   cursor: pointer;
-  
+
   color: #275140;
+}
+
+.newLaunch {
+  position: relative;
+}
+
+.newLaunch::after {
+  content: '';
+  height: 45px;
+  width: 45px;
+  background-image: url(/images/newArrival.png);
+  position: absolute;
+  left: -19px;
+  top: -15px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

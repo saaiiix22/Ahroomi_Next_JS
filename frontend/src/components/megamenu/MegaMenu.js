@@ -5,7 +5,7 @@ import styles from './megamenu.module.css';
 export default function MegaMenu({ visible }) {
   if (!visible) return null;
 
-  const { megaMenu, submenuItem, megaMenuNav } = styles;
+  const { megaMenu, submenuItem, megaMenuNav,newLaunch } = styles;
 
   const megaMenuData = {
     essentials: [
@@ -61,11 +61,11 @@ export default function MegaMenu({ visible }) {
           ))}
         </div>
 
-        <div className="hidden md:block">
+        <div className={newLaunch}>
           <img
             src="/images/dummy.webp"
             alt="Model"
-            className="h-48 w-full object-cover rounded-md"
+            className="w-full object-cover rounded-md"
           />
         </div>
       </div>

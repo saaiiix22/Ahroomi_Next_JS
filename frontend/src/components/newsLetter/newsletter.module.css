@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+.newsletterParent {
+    padding: 40px;
+    background-color: #D5E5D5;
+}
+
+.newsletterSection {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 4px;
+    text-align: center;
+}
+.box {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.newsletterTitle h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #275140;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.boxContent label {
+    font-weight: 400;
+    max-width: 560px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.emailInput {
+    background: #EBEBEB;
+    border: none;
+    height: 40px;
+    flex-grow: 1;
+    min-width: 250px;
+    padding-left: 15px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.submitButton {
+    cursor: pointer;
+    border: none;
+    /* background: #333; */
+    background-color: #275140;
+    padding: 0 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 40px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background: #142c22;
+}
+
+.subscribeBottom {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    margin-top: -1px;
+}
+
+.checkboxLabel {
+    margin-bottom: 0 !important;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    user-select: none;
+}

@@ -30,10 +30,10 @@ export default function FeaturedProduct() {
                 <div className={imgInfo}>
                     <div className={infoInner}>
                         <span className={pName}>Desire 100 ml</span>
-                        <span className={pCompany}>By AHroomi</span>
+                        <span className={pCompany}>Fragnances By AHroomi</span>
                     </div>
                     <div className={aSize}>
-                        Available sizes : <span className={size}>50 ml ,  100 ml</span>
+                        Available In : <span className={size}>10 ml</span> , <span className={size}>100 ml</span>
                     </div>
                 </div>
             </div>

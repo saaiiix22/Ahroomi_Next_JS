@@ -14,8 +14,7 @@
 }
 
 .imgParent {
-    background: #d5e5d5;
-    padding: 13px;
+    padding: 15px;
     border-radius: 22px 20px 0px 0px;
     position: relative;
 }
@@ -27,7 +26,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    /* background-image: url(/images/moringaBg.jpg); */
     background-image: url(/images/reviewBg.webp);
     background-position: center;
     background-repeat: no-repeat;

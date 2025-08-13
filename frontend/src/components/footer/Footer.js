@@ -1,7 +1,10 @@
+import Image from 'next/image';
+import styles from './footer.module.css';
+
 export default function Footer() {
   return (
-    <footer className="p-4 bg-gray-900 text-white text-center">
-      &copy; 2025 My App
+    <footer className={styles.footer}>
+        
     </footer>
-  )
+  );
 }

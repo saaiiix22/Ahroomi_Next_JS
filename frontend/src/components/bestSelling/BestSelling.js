@@ -14,7 +14,8 @@ export default function BestSelling() {
         descriptionP,
         descriptionBtn,
         descriptionWishList,
-        bestSellerHead
+        bestSellerHead,
+        quantity
     } = Styles
     return (
         <div>
@@ -27,6 +28,7 @@ export default function BestSelling() {
 
                 <div className={card}>
                     <nav className={nav}>
+                        
                         Musk 100 ml
                         <div className={heart}></div>
                     </nav>
@@ -40,9 +42,9 @@ export default function BestSelling() {
                             />
                         </div>
                         <div className={description}>
-                            <h2 className={descriptionH2}>Classic Peace Lily</h2>
-                            <h4 className={descriptionH4}>Popular House Plant</h4>
-                            <h1 className={descriptionH1}>$18</h1>
+                            <h2 className={descriptionH2}>Musk  <span className={quantity}>100 ml</span></h2>
+                            <h4 className={descriptionH4}>By AHroomi</h4>
+                            <h1 className={descriptionH1}><span>₹</span>399.00</h1>
                             <p className={descriptionP}>
                                 Classic Peace Lily is a spathiphyllum floor plant arranged in a bamboo
                                 planter with a blue & red ribbom and butterfly pick.
@@ -56,6 +58,7 @@ export default function BestSelling() {
 
                 <div className={card}>
                     <nav className={nav}>
+                        
                         Rosemary Oil 10 ml
                         <div className={heart}></div>
                     </nav>
@@ -69,9 +72,9 @@ export default function BestSelling() {
                             />
                         </div>
                         <div className={description}>
-                            <h2 className={descriptionH2}>Classic Peace Lily</h2>
-                            <h4 className={descriptionH4}>Popular House Plant</h4>
-                            <h1 className={descriptionH1}>$18</h1>
+                            <h2 className={descriptionH2}>Rosemary Oil  <span className={quantity}>10 ml</span></h2>
+                            <h4 className={descriptionH4}>By AHroomi</h4>
+                            <h1 className={descriptionH1}><span>₹</span>399.00</h1>
                             <p className={descriptionP}>
                                 Classic Peace Lily is a spathiphyllum floor plant arranged in a bamboo
                                 planter with a blue & red ribbom and butterfly pick.
@@ -86,6 +89,7 @@ export default function BestSelling() {
 
                 <div className={card}>
                     <nav className={nav}>
+                        <span className={quantity}></span>
                         Face Mask 125 g
                         <div className={heart}></div>
                     </nav>
@@ -99,9 +103,9 @@ export default function BestSelling() {
                             />
                         </div>
                         <div className={description}>
-                            <h2 className={descriptionH2}>Classic Peace Lily</h2>
-                            <h4 className={descriptionH4}>Popular House Plant</h4>
-                            <h1 className={descriptionH1}>$18</h1>
+                            <h2 className={descriptionH2}>Face Mask  <span className={quantity}>125 g</span></h2>
+                            <h4 className={descriptionH4}>By AHroomi</h4>
+                            <h1 className={descriptionH1}><span>₹</span>399.00</h1>
                             <p className={descriptionP}>
                                 Classic Peace Lily is a spathiphyllum floor plant arranged in a bamboo
                                 planter with a blue & red ribbom and butterfly pick.
@@ -129,9 +133,10 @@ export default function BestSelling() {
                             />
                         </div>
                         <div className={description}>
-                            <h2 className={descriptionH2}>Classic Peace Lily</h2>
-                            <h4 className={descriptionH4}>Popular House Plant</h4>
-                            <h1 className={descriptionH1}>$18</h1>
+                        
+                            <h2 className={descriptionH2}>Hair Oil   <span className={quantity}>30 ml</span> </h2>
+                            <h4 className={descriptionH4}>By AHroomi</h4>
+                            <h1 className={descriptionH1}><span>₹</span>399.00</h1>
                             <p className={descriptionP}>
                                 Classic Peace Lily is a spathiphyllum floor plant arranged in a bamboo
                                 planter with a blue & red ribbom and butterfly pick.
@@ -146,6 +151,7 @@ export default function BestSelling() {
 
                 <div className={card}>
                     <nav className={nav}>
+                        
                         Face Oil 30 ml
                         <div className={heart}></div>
                     </nav>
@@ -159,9 +165,9 @@ export default function BestSelling() {
                             />
                         </div>
                         <div className={description}>
-                            <h2 className={descriptionH2}>Classic Peace Lily</h2>
-                            <h4 className={descriptionH4}>Popular House Plant</h4>
-                            <h1 className={descriptionH1}>$18</h1>
+                            <h2 className={descriptionH2}>Face Oil  <span className={quantity}>30 ml</span></h2>
+                            <h4 className={descriptionH4}>By AHroomi</h4>
+                            <h1 className={descriptionH1}><span>₹</span>399.00</h1>
                             <p className={descriptionP}>
                                 Classic Peace Lily is a spathiphyllum floor plant arranged in a bamboo
                                 planter with a blue & red ribbom and butterfly pick.

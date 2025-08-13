@@ -27,10 +27,11 @@
     left: 20px;
     transform: translateY(-50%);
     color: #ffffff;
+    font-size: 16px;
 }
 
 .elWrapper:hover .addToCart {
-    left: 50%;
+    left: 53%;
 }
 
 .elWrapper:hover .img {
@@ -46,6 +47,13 @@
     transition-delay: 300ms;
     bottom: 50px;
     opacity: 1;
+}
+
+.elWrapper:hover .txt {
+    opacity: 1;
+    /* show on hover */
+    transition-delay: 0.2s;
+    /* slight delay after hover */
 }
 
 .boxDown {
@@ -72,15 +80,18 @@
     transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
     width: 660px;
     height: 100%;
-    background-color: #D5E5D5;
+    background-color: #D5E5D5 !important;
     position: absolute;
+    z-index: 22;
     left: -659px;
 }
 
 .hBgInner {
     width: 50%;
     height: 100%;
-    background-color: #275140;
+    position: absolute;
+    z-index: 22;
+    background-color: #275140 !important;
 }
 
 .infoInner {
@@ -95,7 +106,8 @@
     font-size: 18px;
     color: #252525;
     display: block;
-    background-color: #fff;
+    padding: 6px;
+    background-color: #ffffffbf;
 }
 
 .pCompany {
@@ -111,12 +123,23 @@
     width: 100%;
     bottom: -20px;
     font-family: 'PT Sans', sans-serif;
-    color: #828282;
+    color: #275140;
     opacity: 0;
 }
 
 .size {
-    color: #252525;
+    color: #D5E5D5;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #275140;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.size:hover {
+    background-color: #1e4033;
+    transform: scale(1.05);
 }
 
 .cart {
@@ -128,7 +151,10 @@
     left: 0;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+    /* background-color: #d5e5d596; */
+    background-color: #ede8e29e;
 }
+
 
 .price {
     transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
@@ -138,8 +164,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 16px;
-    color: #252525;
+    /* font-size: 16px;
+    color: #252525; */
+    font-size: 18px;
+    z-index: 99;
+    color: #275140;
 }
 
 .addToCart {
@@ -149,6 +178,7 @@
     position: absolute;
     top: 50%;
     left: 110%;
+    z-index: 99;
     transform: translate(-50%, -50%);
 }
 
@@ -158,4 +188,11 @@
     letter-spacing: 0.045em;
     text-transform: uppercase;
     white-space: nowrap;
+    opacity: 0;
+    /* hidden initially */
+    z-index: 100;
+    /* above greens and blur */
+    position: relative;
+    /* so z-index works */
+    transition: opacity 0.4s ease;
 }
