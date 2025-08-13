@@ -33,7 +33,7 @@ export default function FeaturedProduct() {
                         <span className={pCompany}>Fragnances By AHroomi</span>
                     </div>
                     <div className={aSize}>
-                        Available In : <span className={size}>10 ml</span> , <span className={size}>100 ml</span>
+                        Available In : <span className={size}>10 ml</span>  <span className={size}>100 ml</span>
                     </div>
                 </div>
             </div>
