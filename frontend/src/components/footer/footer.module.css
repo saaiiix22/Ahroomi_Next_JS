@@ -1,4 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
+
 .footer {
   background-color: #275140;
-  padding: 80px;
+  padding: 0px 200px 40px 200px;
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 20px;
+}
+
+/* ===== Left Footer ===== */
+.leftFooter {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #153a2b;
+  border-radius: 0px 0px 100px 0px;
+}
+
+.footLogo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footLogo img {
+  width: 100%;
+  height: auto;
+  filter: invert(1);
+}
+
+.leftFooter p {
+  text-align: center;
+  color: #D5E5D5;
+  font-size: 14px;
+}
+
+.footerSocialLink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footerSocialLink h3 {
+  color: #D5E5D5;
+  font-size: 20px;
+}
+
+.footerSocialLink ul {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footerSocialLink ul li {
+  background-color: #D5E5D5;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footerSocialLink ul li:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+}
+
+/* ===== Right Footer ===== */
+.rightFooter {
+  padding: 50px;
+}
+
+.contactUs {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+}
+
+.contactIcon {
+  font-size: 24px;
+  padding: 8px;
+  color: #275140;
+  border-radius: 4px;
+  background-color: #d5e5d5;
+}
+
+.contactInfo p {
+  font-size: 12px;
+}
+
+.smallText {
+  margin-top: 20px;
+}
+
+.smallText h3 {
+  font-size: 24px;
+  color: #d5e5d5;
+}
+
+.smallText p {
+  font-size: 15px;
+  text-align: justify;
+  color: #fff;
+  margin-top: 6px;
+  font-family: "Raleway", sans-serif;
+}
+
+.linkContainer {
+  margin-left: 50px;
+}
+
+.linkContainer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.linkContainer ul li {
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #c2a878;
+}
+
+.quickLinks li {
+  list-style: none;
+}
+
+.headLink {
+  color: #d5e5d5 !important;
+  font-size: 20px !important;
+  margin-bottom: 10px;
+  position: relative;
+  margin-top: 0 !important;
+}
+
+.headLink::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 57px;
+  background-color: #d5e5d557;
+  bottom: -7px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.knowMore {
+  margin-top: 20px;
+}
+.lastLinks{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.lastLinks .headLinkLast {
+  color: #d5e5d5 !important;
+  font-size: 20px !important;
+  margin-bottom: 10px;
+  position: relative;
+  margin-top: 0 !important;
+}
+.lastLinks .headLinkLast::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 57px;
+  background-color: #d5e5d557;
+  bottom: -7px;
+  right: 0;
+  border-radius: 2px;
+}
+
+.lastLinks li a{
+  color: #c2a878;
+  font-size: 14px;
+  margin-top: 5px;
+  text-decoration: none;
+  position: relative;
+}
+.copyRight {
+  grid-column: 1 / -1; 
+  color: #d5e5d5;
+  border-top: 1px solid #1c4233;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 0px 100px 40px 100px;
+    grid-template-columns: 35% 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0px 50px 40px 50px;
+    grid-template-columns: 1fr;
+  }
+
+  .leftFooter {
+    /* border-radius: 0px; */
+    border-radius: 0px 0px 50px 50px;
+    padding: 40px 20px;
+  }
+
+  .rightFooter {
+    padding: 50px 20px;
+  }
+
+  .footerSocialLink ul {
+    justify-content: center;
+  }
+
+  .footerSocialLink {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 0px 20px 30px 20px;
+  }
+
+  .footLogo {
+    width: 150px;
+  }
+
+  .footerSocialLink ul {
+    gap: 15px;
+  }
 }
