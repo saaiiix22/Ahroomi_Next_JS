@@ -60,19 +60,32 @@
 }
 
 .footerSocialLink ul li {
-  background-color: #D5E5D5;
+  background-color: #d5e5d5;
+  color: #275140;
   border-radius: 50%;
   height: 35px;
   width: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.footerSocialLink ul li:hover {
-  transform: scale(1.1);
-  background-color: #ffffff;
+.facebook:hover{
+  background-color: #1877F2;
+  transform: scale(1.05);
+  color: #fff;
+}
+.twitter:hover{
+  background-color: #000000;
+  transform: scale(1.05);
+  color: #fff;
+}
+.instagram:hover{
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  transform: scale(1.05);
+  color: #fff;
 }
 
 /* ===== Right Footer ===== */
@@ -131,6 +144,11 @@
   font-size: 14px;
   margin-top: 5px;
   color: #c2a878;
+  transition: all .2s ease-in-out;
+}
+
+.linkContainer ul li:hover{
+  transform: translateX(5px);
 }
 
 .quickLinks li {

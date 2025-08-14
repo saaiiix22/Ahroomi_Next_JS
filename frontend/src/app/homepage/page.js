@@ -12,14 +12,14 @@ import ReviewCustomer from "@/components/reviewsCustomer/ReviewsCustomer";
 import NewsLetter from "@/components/newsLetter/NewsLetter";
 
 export default function HomePage() {
-  const { homeContainer } = Styles;
+  const { largeHomeContainer,homeContainer } = Styles;
 
   return (
     <>
 
 
       <div>
-        <div className={homeContainer}>
+        <div className={largeHomeContainer}>
           <TrendingContainer />
           <CarouselParent />
         </div>

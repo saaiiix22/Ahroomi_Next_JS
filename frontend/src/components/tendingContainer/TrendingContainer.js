@@ -5,7 +5,7 @@ export default function TrendingContainer() {
     const {trendingContainer}  = Styles
     return (
         <div className={trendingContainer}>
-            <Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/>
+            <Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/><Trending/>
         </div>
     );
 }   

@@ -24,20 +24,20 @@ export default function Footer() {
           Science-Backed Beauty, Inspired by Nature. A unit of Aashdit Nutritech Private Limited
         </p>
         <div className={styles.footerSocialLink}>
-          <h3>Follow us</h3>
+          <h3>Follow us </h3>
           <ul>
-            <li>
-              <a href="#" aria-label="Facebook">
+            <li className={styles.facebook}>
+              <a href="#" aria-label="Facebook" >
                 <FaFacebookF />
               </a>
             </li>
-            <li>
-              <a href="#" aria-label="Twitter">
+            <li className={styles.twitter}>
+              <a href="#" aria-label="Twitter" >
                 <FaXTwitter />
               </a>
             </li>
-            <li>
-              <a href="#" aria-label="Instagram">
+            <li className={styles.instagram}>
+              <a href="#" aria-label="Instagram" >
                 <FaInstagram />
               </a>
             </li>
