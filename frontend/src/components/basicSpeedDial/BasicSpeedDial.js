@@ -4,16 +4,16 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
-import FileCopyIcon from "@mui/icons-material/FileCopyOutlined";
-import SaveIcon from "@mui/icons-material/Save";
-import PrintIcon from "@mui/icons-material/Print";
 import ShareIcon from "@mui/icons-material/Share";
-import { MdOutlineShoppingCart } from "react-icons/md";
+import MenuIcon from '@mui/icons-material/Menu';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import PersonIcon from '@mui/icons-material/Person';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
 const actions = [
-  { icon: <FileCopyIcon />, name: "Copy" },
-  { icon: <SaveIcon />, name: "Save" },
-  { icon: <PrintIcon />, name: "Print" },
+  { icon: <ShoppingCartIcon />, name: "Cart" },
+  { icon: <PersonIcon />, name: "Profile" },
+  { icon: <LocalShippingIcon />, name: "Track Order" },
   { icon: <ShareIcon />, name: "Share" },
 ];
 
@@ -21,16 +21,15 @@ export default function BasicSpeedDial() {
   return (
     <Box sx={{ position: "fixed", bottom: 16, right: 16, zIndex: 1000 }}>
       <SpeedDial
-        ariaLabel="Cart SpeedDial"
-        icon={<MdOutlineShoppingCart />}
+        ariaLabel="User"
+        icon={<MenuIcon /> }
         FabProps={{
           sx: {
-            backgroundColor: "#d5e5d5",
-            color: "#275140",
-            fontSize: '20px',
+            backgroundColor: "#153a2b",
+            color: "#d5e5d5",
             boxShadow:'none',
             "&:hover": {
-              backgroundColor: "#275140",
+              backgroundColor: "#0b1e16",
               color: "#d5e5d5",
             }
           }
