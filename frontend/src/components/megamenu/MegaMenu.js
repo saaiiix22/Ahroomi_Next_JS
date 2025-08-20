@@ -2,10 +2,8 @@
 import Link from 'next/link';
 import styles from './megamenu.module.css';
 
-export default function MegaMenu({ visible }) {
-  if (!visible) return null;
-
-  const { megaMenu, submenuItem, megaMenuNav,newLaunch } = styles;
+export default function MegaMenu() {
+  const { megaMenu, submenuItem, megaMenuNav, newLaunch } = styles;
 
   const megaMenuData = {
     essentials: [
@@ -37,7 +35,7 @@ export default function MegaMenu({ visible }) {
         <div>
           <h4 className={megaMenuNav}>Your Essentials</h4>
           {megaMenuData.essentials.map((item) => (
-            <Link key={item.href}  href={item.href} className={submenuItem}>
+            <Link key={item.href} href={item.href} className={submenuItem}>
               {item.label}
             </Link>
           ))}
