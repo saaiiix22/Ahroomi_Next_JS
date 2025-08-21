@@ -11,7 +11,7 @@ export default function ReviewCustomer() {
         tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
         mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
     };
-
+    const newImg = ''
     const reviews = [
         {
             id: "content1",
