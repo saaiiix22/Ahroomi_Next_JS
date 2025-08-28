@@ -10,6 +10,7 @@ import ChooseUs from "@/components/chooseUs/ChooseUs";
 import BasicSpeedDial from "@/components/basicSpeedDial/BasicSpeedDial";
 import ReviewCustomer from "@/components/reviewsCustomer/ReviewsCustomer";
 import NewsLetter from "@/components/newsLetter/NewsLetter";
+import ShopByCategory from "@/components/shopByCategory/shopByCategory";
 
 export default function HomePage() {
   const { largeHomeContainer,homeContainer } = Styles;
@@ -22,6 +23,7 @@ export default function HomePage() {
         <div className={largeHomeContainer}>
           <TrendingContainer />
           <CarouselParent />
+        {/* <ShopByCategory/> */}
         </div>
         <BestSelling />
         <div className={homeContainer}>
