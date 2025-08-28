@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ReviewCard from "../reviewCard/ReviewCard";
 import Styles from './reviewCustomer.module.css'
+import SectionHeading from "../sectionHeading/SectionHeading";
 
 export default function ReviewCustomer() {
     const responsive = {
@@ -11,7 +12,6 @@ export default function ReviewCustomer() {
         tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
         mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
     };
-    const newImg = ''
     const reviews = [
         {
             id: "content1",
@@ -58,7 +58,7 @@ export default function ReviewCustomer() {
 
     return (
         <div className="p-10 m-auto px-20">
-            <h6 className={Styles.homeHead}>What Others say about us</h6>
+            <SectionHeading props={'What Others say about us'}/>
             <Carousel
                 responsive={responsive}
                 draggable={true}

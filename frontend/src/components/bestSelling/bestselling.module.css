@@ -173,27 +173,6 @@
     background-color:#a8160c45;
 }
 
-.bestSellerHead {
-    font-size: 35px;
-    text-align: center;
-    color: #275140;
-    font-weight: 500;
-    font-family: "Raleway", sans-serif;
-    position: relative;
-}
-
-.bestSellerHead::after {
-    content: '';
-    height: 50px;
-    width: 137px;
-    position: absolute;
-    bottom: -29px;
-    left: 46%;
-    background-repeat: no-repeat;
-    background-image: url(/images/borderBottom.png);
-    background-position: center;
-    background-size: contain;
-}
 
 .quantity {
     font-family: 'Poppins', sans-serif;

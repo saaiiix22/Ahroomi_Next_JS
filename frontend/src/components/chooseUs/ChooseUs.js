@@ -1,4 +1,5 @@
 import ChooseUsCard from '../chooseUsCard/ChooseUsCard';
+import SectionHeading from '../sectionHeading/SectionHeading';
 import Styles from './chooseUs.module.css'
 export default function ChooseUs() {
     const datas = [
@@ -32,7 +33,7 @@ export default function ChooseUs() {
     const { chooseUsComponent, homeHead } = Styles
     return (
         <div className={chooseUsComponent}>
-            <h6 className={homeHead}>Why Choose Us</h6>
+            <SectionHeading props={'Why Choose Us'}/>
             <div className='flex gap-7 justify-center items-center'>
                 {datas.map((item, index) => (
                     <ChooseUsCard 

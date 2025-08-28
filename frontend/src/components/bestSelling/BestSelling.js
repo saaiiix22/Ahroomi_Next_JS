@@ -1,3 +1,4 @@
+import SectionHeading from '../sectionHeading/SectionHeading';
 import Styles from './bestselling.module.css'
 
 export default function BestSelling() {
@@ -14,7 +15,6 @@ export default function BestSelling() {
         descriptionP,
         descriptionBtn,
         descriptionWishList,
-        bestSellerHead,
         quantity
     } = Styles
 
@@ -63,9 +63,7 @@ export default function BestSelling() {
     ]
     return (
         <div>
-            <div className='p-2 mt-3'>
-                <h6 className={bestSellerHead}>Best Sellers</h6>
-            </div>
+            <SectionHeading props={'Best Sellers'}/>
             <div className='p-8 flex gap-10 justify-center'>
 
                 {
