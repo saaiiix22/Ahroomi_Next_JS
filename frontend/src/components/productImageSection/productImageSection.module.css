@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
+
+.container {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    justify-content: end;
+}
+
+.mainImageWrapper {
+    width: 450px;
+    height: 450px;
+    border: 1px solid #d5e5d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.mainImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.thumbnailWrapper {
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #d5e5d5;
+    cursor: pointer;
+    object-fit: cover;
+    transition: border 0.3s;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.thumbnail img {
+    height: 100%;
+    width: 100%;
+}
+
+.thumbnail:hover {
+    border-color: #153a2b;
+}
+
+.active {
+    border: 2px solid #153a2b;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.addToCartBtn {
+    width: 100%;
+    padding: 12px 0;
+    border: 1px solid #d1d5db;
+    border-radius: 2px;
+    font-weight: 500;
+    color: #374151;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.addToCartBtn:hover {
+    background-color: #f3f4f6;
+}
+
+.cartIcon {
+    font-size: 18px;
+}
+
+.buyNowBtn {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 2px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #f97316;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buyNowBtn:hover {
+    background-color: #ea580c;
+}

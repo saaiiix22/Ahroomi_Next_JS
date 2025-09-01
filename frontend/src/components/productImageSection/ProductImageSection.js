@@ -1,0 +1,61 @@
+"use client";
+
+import { useState } from "react";
+import Styles from "./productImageSection.module.css";
+import { FaCartShopping } from "react-icons/fa6";
+
+export default function ProductImageSection() {
+    const images = [
+        "https://setmycart.blob.core.windows.net/smcproduction//7-23-2025/181cc034425847b79b4bd1f75c0bb941/MUSK_100_ML_1.jpg",
+        "https://setmycart.blob.core.windows.net/smcproduction//8-22-2025/314f74d21f7e4fa395c26ded9bacc41c/MUSK_100_ML_2_11zon.webp",
+        "https://setmycart.blob.core.windows.net/smcproduction//8-22-2025/8d163fbc5de540909ffb26bff17dcf8d/MUSK_100_ML_5_11zon.webp",
+        "https://setmycart.blob.core.windows.net/smcproduction//8-22-2025/cb2642c9c5984633928b241863dc0f5b/MUSK_100_ML_4_11zon.webp",
+        "https://setmycart.blob.core.windows.net/smcproduction//8-22-2025/3f52aae167374d7d97deca1cf4a524c7/MUSK_100_ML_3_11zon.webp"
+    ];
+
+    const [selectedImage, setSelectedImage] = useState(images[0]);
+
+    return (
+        <>
+            <div className={Styles.container}>
+                <div className={Styles.thumbnailWrapper}>
+                    {images.map((img, index) => (
+                        <div
+                            key={index}
+                            className={`${Styles.thumbnail} ${selectedImage === img ? Styles.active : ""
+                                }`}
+                        >
+                            <img
+                                src={img}
+                                alt={`Thumbnail ${index + 1}`}
+                                onClick={() => setSelectedImage(img)}
+                            />
+                        </div>
+                    ))}
+                </div>
+                <div>
+                    <div className={Styles.mainImageWrapper}>
+                        <img src={selectedImage} alt="Selected" className={Styles.mainImage} />
+                    </div>
+                    <div className="grid grid-cols-12 gap-3 mt-3">
+                        <div className="col-span-6">
+                            <button className={Styles.addToCartBtn}>
+                                <FaCartShopping className={Styles.cartIcon} />
+                                <span>Add To Cart</span>
+                            </button>
+                        </div>
+
+                        <div className="col-span-6">
+                            <button className={Styles.buyNowBtn}>
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </>
+    );
+}

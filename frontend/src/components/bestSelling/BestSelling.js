@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import SectionHeading from '../sectionHeading/SectionHeading';
 import Styles from './bestselling.module.css'
 
@@ -69,7 +70,7 @@ export default function BestSelling() {
                 {
                     data.map((i, index) => {
                         return (
-                            <div className={card} key={index}>
+                            <Link className={card} key={index} href={`/productdetails`}>
                                 <nav className={nav}>
                                     {i.nameOfPRoduct} {i.quantityOfPoduct}
                                     <div className={heart}></div>
@@ -95,7 +96,7 @@ export default function BestSelling() {
                                         <button className={descriptionWishList}>Wishlist</button>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         )
                     })
                 }
