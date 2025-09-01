@@ -7,6 +7,9 @@ import Stack from "@mui/material/Stack";
 
 export default function ProductDetailsSection() {
     const [showAll, setShowAll] = useState(false);
+    const [quantityCount, setQuantityCount] = useState(1)
+
+
 
     const details = [
         {
@@ -29,28 +32,43 @@ export default function ProductDetailsSection() {
 
     const visibleDetails = showAll ? details : details.slice(0, 3);
 
+   
+
     return (
         <div className={Styles.productDetails}>
             <h1>
                 MUSK, <span className={Styles.productQuantity}>100 ml</span>
             </h1>
             <span className={Styles.category}>Fragrances By AHroomi</span>
-
+            <Stack spacing={1}>
+                <Rating
+                    name="half-rating-read"
+                    defaultValue={4}
+                    precision={0.5}
+                    readOnly
+                    sx={{ fontSize: "18px" }}
+                />
+            </Stack>
             <div className={Styles.ratingPriceRow}>
-                <Stack spacing={1}>
-                    <Rating
-                        name="half-rating-read"
-                        defaultValue={4}
-                        precision={0.5}
-                        readOnly
-                        sx={{ fontSize: "18px" }}
-                    />
-                </Stack>
+                
                 <div className={Styles.priceBox}>
                     <span className={Styles.currentPrice}>₹550</span>
                     <span className={Styles.oldPrice}>₹699</span>
                 </div>
+                
+                <div className={Styles.quantityCounter}>
+                    <button onClick={()=>setQuantityCount(quantityCount>1?quantityCount-1:1)} className={Styles.qtyBtn}>
+                        -
+                    </button>
+                    <span className={Styles.qtyValue}>{quantityCount}</span>
+                    <button className={Styles.qtyBtn} onClick={()=>setQuantityCount(quantityCount+1)}>
+                        +
+                    </button>
+                </div>
+
             </div>
+
+
 
             <h3 className={Styles.detailsHeading}>Product Details</h3>
             <div className={Styles.detailsWrapper}>

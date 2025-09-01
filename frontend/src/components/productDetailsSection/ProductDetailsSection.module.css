@@ -1,105 +1,140 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 .productDetails {
-  padding: 10px 20px;
-  font-family: 'Poppins', sans-serif;
-  color: #222;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 600px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
 }
 
 .productDetails h1 {
-  font-size: 34px;
-  font-weight: 600;
-  color: #275140;
-  line-height: 12px;
-  margin: 0;
+    font-size: 34px;
+    font-weight: 600;
+    color: #275140;
+    line-height: 12px;
+    margin: 0;
 }
 
 .productDetails h1 span.productQuantity {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 400;
-  color: #555;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    color: #555;
 }
 
 .category {
-  font-size: 14px;
-  color: #a38d66;
+    font-size: 14px;
+    color: #a38d66;
 }
 
 .ratingPriceRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 85px;
+    margin-top: -12px;
 }
 
 .priceBox {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
 }
 
 .currentPrice {
-  font-size: 32px;
-  font-weight: 600;
-  color: #275140;
+    font-size: 32px;
+    font-weight: 600;
+    color: #f97316;
 }
 
 .oldPrice {
-  font-size: 16px;
-  color: #999;
-  text-decoration: line-through;
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
 }
 
 .detailsHeading {
-  margin-top: 12px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #275140;
+    font-size: 18px;
+    font-weight: 600;
+    color: #275140;
 }
 
 .detailsWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .detailItem {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #444;
-  display: flex;
-  align-items: start;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    display: flex;
+    align-items: start;
 }
+
 .detailItem strong {
-  color: #275140;
-}
-.detailItem p{
     color: #275140;
 }
+
+.detailItem p {
+    color: #275140;
+}
+
 .bullet {
-  margin-right: 6px;
-  color: #275140;
-  font-size: 14px;
+    margin-right: 6px;
+    color: #275140;
+    font-size: 14px;
 }
 
 .readMore {
-  margin-top: 10px;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-  align-self: flex-start;
-  padding: 6px 14px;
-  border-radius: 6px;
-  background-color: #275140;
-  color: #fff;
-  transition: background 0.3s ease;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: flex-start;
+    padding: 6px 14px;
+    border-radius: 6px;
+    background-color: #275140;
+    color: #fff;
+    transition: background 0.3s ease;
 }
 
 .readMore:hover {
-  background-color: #1f4031;
+    background-color: #1f4031;
+}
+
+.quantityCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.qtyBtn {
+    background: #D5E5D5;
+    color: #275140;
+    border: 1px solid #f8fffc;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.qtyBtn:hover {
+    background: #275140;
+    color: #D5E5D5;
+}
+
+.qtyValue {
+    font-size: 16px;
+    min-width: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #275140;
 }
