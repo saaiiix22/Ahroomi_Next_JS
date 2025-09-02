@@ -1,0 +1,29 @@
+.reviewCard {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.reviewText {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.reviewImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.reviewImage:hover {
+  transform: scale(1.05);
+}

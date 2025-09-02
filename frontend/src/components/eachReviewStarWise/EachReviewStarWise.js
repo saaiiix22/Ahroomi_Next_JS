@@ -5,8 +5,9 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import { useState } from 'react';
+import CustomerReviewCard from '../customerReviewCard/CustomerReviewCard';
 export default function EachReviewStarWise() {
-    const [value, setValue] = useState('1');
+    const [value, setValue] = useState('5');
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -24,11 +25,26 @@ export default function EachReviewStarWise() {
                             <Tab label="1 Star Reviews" value="1" />
                         </TabList>
                     </Box>
-                    <TabPanel value="1">Item One</TabPanel>
+                    <TabPanel value="1"></TabPanel>
                     <TabPanel value="2">Item Two</TabPanel>
                     <TabPanel value="3">Item Three</TabPanel>
                     <TabPanel value="4">Item Four</TabPanel>
-                    <TabPanel value="5">Item Five</TabPanel>
+                    <TabPanel value="5">
+                        <div className='grid grid-cols-12 gap-5'>
+                            <div className='col-span-6'>
+                                <CustomerReviewCard/>
+                            </div>
+                            <div className='col-span-6'>
+                                <CustomerReviewCard/>
+                            </div>
+                            <div className='col-span-6'>
+                                <CustomerReviewCard/>
+                            </div>
+                            <div className='col-span-6'>
+                                <CustomerReviewCard/>
+                            </div>
+                        </div>
+                    </TabPanel>
                 </TabContext>
             </Box>
         </div>

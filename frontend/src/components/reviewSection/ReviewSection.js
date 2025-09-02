@@ -30,7 +30,7 @@ export default function ReviewSection() {
         <div className={Styles.rightStack}>
           {reviewData.map((row, i) => (
             <div className={Styles.rowAlt} key={i}>
-              <span className={Styles.starLabel}>{row.stars}★</span>
+              <span className={Styles.starLabel}>{row.stars} ★</span>
               <div className={Styles.progressBarAlt}>
                 <div
                   className={Styles.progressFillAlt}
