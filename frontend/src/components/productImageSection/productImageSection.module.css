@@ -101,3 +101,16 @@
 .buyNowBtn:hover {
     background-color: #ea580c;
 }
+.hidden {
+  display: none;
+}
+
+.mainImageWrapper {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.mainImage {
+  pointer-events: none; /* avoids blocking mouse tracking */
+}

@@ -1,0 +1,102 @@
+.writeReview {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 25px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Keep heading unchanged (your version) */
+.heading {
+  font-size: 26px;
+  font-weight: 500;
+  color: #275140;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 8px;
+  font-family: "Raleway", sans-serif;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  height: 4px;
+  background: #d5e5d5;
+  border-radius: 2px;
+}
+
+/* Form as two-column layout */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shared styles */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  border: 1px solid #275140;
+}
+
+.textarea {
+  resize: none;
+  min-height: 117px;
+}
+
+.submitBtn {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  background: #275140;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  margin: 0 auto;
+  grid-column:1/-1;
+}
+
+.submitBtn:hover {
+  background: #1c3a2d;
+}

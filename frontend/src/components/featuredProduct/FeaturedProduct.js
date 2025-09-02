@@ -29,7 +29,7 @@ export default function FeaturedProduct() {
                 />
                 <div className={imgInfo}>
                     <div className={infoInner}>
-                        <span className={pName}>Desire 100 ml</span>
+                        <span className={pName}>Desire</span>
                         <span className={pCompany}>Fragnances By AHroomi</span>
                     </div>
                     <div className={aSize}>
@@ -44,7 +44,7 @@ export default function FeaturedProduct() {
                 </div>
 
                 <a className={cart} href="#">
-                    <span className={price}>$120</span>
+                    <span className={price}>₹550</span>
                     <span className={addToCart}>
                         <span className={txt}>Add in cart</span>
                     </span>

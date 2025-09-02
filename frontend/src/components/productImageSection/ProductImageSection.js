@@ -14,6 +14,16 @@ export default function ProductImageSection() {
     ];
 
     const [selectedImage, setSelectedImage] = useState(images[0]);
+    const [backgroundPosition, setBackgroundPosition] = useState("center");
+    const [isZoomed, setIsZoomed] = useState(false);
+
+    const handleMouseMove = (e) => {
+        const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
+        const x = ((e.pageX - left - window.scrollX) / width) * 100;
+        const y = ((e.pageY - top - window.scrollY) / height) * 100;
+        setBackgroundPosition(`${x}% ${y}%`);
+    };
+
 
     return (
         <>
@@ -34,8 +44,17 @@ export default function ProductImageSection() {
                     ))}
                 </div>
                 <div>
-                    <div className={Styles.mainImageWrapper}>
-                        <img src={selectedImage} alt="Selected" className={Styles.mainImage} />
+                    <div className={Styles.mainImageWrapper}
+                        onMouseMove={handleMouseMove}
+                        onMouseEnter={() => setIsZoomed(true)}
+                        onMouseLeave={() => setIsZoomed(false)}
+                        style={{
+                            backgroundImage: `url(${selectedImage})`,
+                            backgroundPosition: isZoomed ? backgroundPosition : "center",
+                            backgroundSize: isZoomed ? "200%" : "contain",
+                        }}
+                    >
+                        <img src={selectedImage} alt="Selected" className={`${Styles.mainImage} ${isZoomed ? Styles.hidden : ""}`} />
                     </div>
                     <div className="grid grid-cols-12 gap-3 mt-3">
                         <div className="col-span-6">
