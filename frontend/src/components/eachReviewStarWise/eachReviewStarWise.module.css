@@ -1,0 +1,24 @@
+/* Base style for all tabs */
+.tabList :global(.MuiTab-root) {
+  text-transform: none;
+  font-weight: 500;
+  color: #93b993;
+  /* border-radius: 8px; */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Active tab */
+.tabList :global(.MuiTab-root.Mui-selected) {
+  color: #275140 !important;
+  border-bottom:2px solid  #275140;
+}
+
+/* Hover effect */
+.tabList :global(.MuiTab-root:hover) {
+  background-color: #d5e5d58a;
+}
+
+/* Hide default underline indicator */
+.tabList :global(.MuiTabs-indicator) {
+  display: none;
+}
