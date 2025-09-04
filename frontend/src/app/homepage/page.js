@@ -21,8 +21,8 @@ export default function HomePage() {
 
       <div>
         <div className={largeHomeContainer}>
-          <TrendingContainer />
           <CarouselParent />
+          <TrendingContainer />
         {/* <ShopByCategory/> */}
         </div>
         <BestSelling />

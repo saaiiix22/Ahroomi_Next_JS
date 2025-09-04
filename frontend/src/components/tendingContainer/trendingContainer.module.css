@@ -2,7 +2,8 @@
   margin: 15px 0px;
   padding: 10px 0px;
   display: flex;
-  gap: 15px;
+  gap: 25px;
+  justify-content: center;
   align-items: center;
   overflow-x: auto;
   overflow-y: hidden;

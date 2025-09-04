@@ -30,7 +30,7 @@ export default function CarouselParent() {
                 infinite={true}
                 autoPlay={true}
                 autoPlaySpeed={2000}
-                arrows={false}
+                arrows={true}
                 className='rounded-md'
             >
                 <div className={item}>
