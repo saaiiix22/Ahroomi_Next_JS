@@ -32,7 +32,7 @@ export default function ProductDetailsSection() {
     ];
 
     const visibleDetails = showAll ? details : details.slice(0, 3);
-
+    
 
 
     return (

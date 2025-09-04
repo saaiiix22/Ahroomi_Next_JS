@@ -4,6 +4,7 @@
     /* margin: 15px auto; */
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -102,7 +103,7 @@
 }
 
 .pName {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     color: #252525;
     display: block;
@@ -111,7 +112,7 @@
 }
 
 .pCompany {
-    font-family: 'Lato', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 12px;
     text-transform: capitalize;
     color: #8c8c8c;
