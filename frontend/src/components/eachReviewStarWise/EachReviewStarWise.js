@@ -38,7 +38,9 @@ export default function EachReviewStarWise() {
           <TabPanel value="2">Item Two</TabPanel>
           <TabPanel value="3">Item Three</TabPanel>
           <TabPanel value="4">Item Four</TabPanel>
-          <TabPanel value="5">
+          <TabPanel value="5" sx={{
+            paddingX:'0px'
+          }}>
             <div className="grid grid-cols-12 gap-5">
               <div className="col-span-6">
                 <CustomerReviewCard />

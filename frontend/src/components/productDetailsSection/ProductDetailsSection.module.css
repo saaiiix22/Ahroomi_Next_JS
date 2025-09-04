@@ -22,7 +22,7 @@
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 400;
-    color: #555;
+    color: #275140;
 }
 
 .category {
@@ -82,6 +82,7 @@
 
 .detailItem p {
     color: #275140;
+    text-align: justify;
 }
 
 .bullet {
@@ -137,4 +138,11 @@
     text-align: center;
     font-weight: 600;
     color: #275140;
+}
+
+.shareBtn{
+    padding: 9px;
+    background: #d5e5d5;
+    color: #275140;
+    border-radius: 50%;
 }

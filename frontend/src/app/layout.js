@@ -19,7 +19,8 @@ export default function RootLayout({ children }) {
         <div className='navbar'>
           <Navbar />
         </div>
-        <main className="min-h-screen">{children}</main>
+        {/* <main className="min-h-screen">{children}</main> */}
+        <main className="h-auto">{children}</main>
         <Footer />
       </body>
     </html>

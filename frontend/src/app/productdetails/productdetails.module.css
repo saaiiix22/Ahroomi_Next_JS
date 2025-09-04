@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-.homeContainer{
+.homeContainer {
     margin: auto;
-    padding: 30px 100px;
-}   
+    padding: 30px 0px;
+    width: 1500px;
+}

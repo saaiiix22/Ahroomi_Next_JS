@@ -8,6 +8,9 @@
 
 .scrollWrapper {
     width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 22px;
     overflow: hidden;
 }
 

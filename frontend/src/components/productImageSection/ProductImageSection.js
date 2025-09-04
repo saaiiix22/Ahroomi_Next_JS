@@ -1,10 +1,14 @@
 "use client";
-
+import { FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import Styles from "./productImageSection.module.css";
 import { FaCartShopping } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function ProductImageSection() {
+
+    const [wishlist, setWishList] = useState(false)
+
     const images = [
         "https://setmycart.blob.core.windows.net/smcproduction//7-23-2025/181cc034425847b79b4bd1f75c0bb941/MUSK_100_ML_1.jpg",
         "https://setmycart.blob.core.windows.net/smcproduction//8-22-2025/314f74d21f7e4fa395c26ded9bacc41c/MUSK_100_ML_2_11zon.webp",
@@ -55,13 +59,16 @@ export default function ProductImageSection() {
                         }}
                     >
                         <img src={selectedImage} alt="Selected" className={`${Styles.mainImage} ${isZoomed ? Styles.hidden : ""}`} />
+                        <div className={Styles.wishList} onClick={()=>setWishList(!wishlist)} style={{color:wishlist?'#f20809':'#d5e5d5'}}>
+                            <FaHeart />
+                        </div>
                     </div>
                     <div className="grid grid-cols-12 gap-3 mt-3">
                         <div className="col-span-6">
-                            <button className={Styles.addToCartBtn}>
+                            <Link href={'/cart'} className={Styles.addToCartBtn}>
                                 <FaCartShopping className={Styles.cartIcon} />
                                 <span>Add To Cart</span>
-                            </button>
+                            </Link>
                         </div>
 
                         <div className="col-span-6">

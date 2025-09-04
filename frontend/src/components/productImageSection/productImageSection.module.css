@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
+    position: relative;
 }
 
 .mainImage {
@@ -101,16 +102,27 @@
 .buyNowBtn:hover {
     background-color: #ea580c;
 }
+
 .hidden {
-  display: none;
+    display: none;
 }
 
 .mainImageWrapper {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .mainImage {
-  pointer-events: none; /* avoids blocking mouse tracking */
+    pointer-events: none;
+    /* avoids blocking mouse tracking */
+}
+
+.wishList {
+    position: absolute;
+    padding: 10px;
+    top: 4px;
+    right: 4px;
+    background-color: #fff;
+    border-radius: 50%;
 }

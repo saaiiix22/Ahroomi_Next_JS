@@ -11,6 +11,54 @@ export default function Header() {
                     <li>No Toxins</li>
                     <li>Just Nature & Science</li>
                 </ul>
+                <ul className={headerText}>
+                    <li>Moringa Powered Self-Care.</li>
+                    <li>Backed by Science</li>
+                    <li>No Toxins</li>
+                    <li>Just Nature & Science</li>
+                </ul>
+                <ul className={headerText}>
+                    <li>Moringa Powered Self-Care.</li>
+                    <li>Backed by Science</li>
+                    <li>No Toxins</li>
+                    <li>Just Nature & Science</li>
+                </ul>
+                <ul className={headerText}>
+                    <li>Moringa Powered Self-Care.</li>
+                    <li>Backed by Science</li>
+                    <li>No Toxins</li>
+                    <li>Just Nature & Science</li>
+                </ul>
+                <ul className={headerText}>
+                    <li>Moringa Powered Self-Care.</li>
+                    <li>Backed by Science</li>
+                    <li>No Toxins</li>
+                    <li>Just Nature & Science</li>
+                </ul>
+                <ul className={headerText}>
+                    <li>Moringa Powered Self-Care.</li>
+                    <li>Backed by Science</li>
+                    <li>No Toxins</li>
+                    <li>Just Nature & Science</li>
+                </ul>
+                <ul className={headerText}>
+                    <li>Moringa Powered Self-Care.</li>
+                    <li>Backed by Science</li>
+                    <li>No Toxins</li>
+                    <li>Just Nature & Science</li>
+                </ul>
+                <ul className={headerText}>
+                    <li>Moringa Powered Self-Care.</li>
+                    <li>Backed by Science</li>
+                    <li>No Toxins</li>
+                    <li>Just Nature & Science</li>
+                </ul>
+                <ul className={headerText}>
+                    <li>Moringa Powered Self-Care.</li>
+                    <li>Backed by Science</li>
+                    <li>No Toxins</li>
+                    <li>Just Nature & Science</li>
+                </ul>
             </div>
         </div>
     );

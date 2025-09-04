@@ -1,0 +1,112 @@
+.checkoutContainer {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #d5e5d5;
+    max-width: 380px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: #275140;
+    font-family: "Raleway", sans-serif;
+}
+
+.couponBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.couponTitle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.icon {
+    color: #a38d66;
+    font-size: 18px;
+}
+
+.checkBtn {
+    background: #a38d66;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.checkBtn:hover {
+    background: #7c6b4e;
+}
+
+.summaryList {
+    list-style: none;
+    margin: 0;
+    padding: 0px 12px;
+}
+
+.summaryList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #d5e5d5;
+    font-size: 14px;
+}
+
+.summaryList li:last-child {
+    border-bottom: none;
+}
+
+.grandTotalBox {
+    list-style: none;
+    margin: 10px 0px 20px 0px;
+    padding: 12px 0;
+    border-top: 1px solid #d5e5d5;
+    border-bottom: 1px solid #d5e5d5;
+}
+
+.grandTotalBox li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    color: #275140;
+}
+
+.checkoutBtn {
+    width: 100%;
+    padding: 12px 0;
+    background: #275140;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.checkoutBtn:hover {
+    background: #153a2b;
+}
