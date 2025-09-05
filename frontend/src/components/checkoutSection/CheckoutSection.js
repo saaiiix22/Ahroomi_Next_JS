@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Styles from './checkoutSection.module.css'
 import { RiDiscountPercentFill } from "react-icons/ri";
 
@@ -44,7 +45,7 @@ export default function CheckoutSection() {
                 </li>
             </ul>
 
-            <button className={Styles.checkoutBtn}>Proceed To Checkout</button>
+            <Link href={'/cart/address'} className={Styles.checkoutBtn}>Proceed To Checkout</Link>
         </div>
     );
 }

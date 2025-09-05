@@ -1,0 +1,209 @@
+.cartItems {
+    max-width: 900px;
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 0px 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d5e5d5;
+}
+
+.header h2 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #275140;
+    font-family: "Raleway", sans-serif;
+}
+
+.continue {
+    font-size: 14px;
+    color: #275140;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #d5e5d5;
+    padding: 4px 12px;
+    border-radius: 3px;
+}
+
+.continue:hover {
+    background: #275140;
+    color: #fff;
+}
+
+.cartList {
+    display: flex;
+    gap: 18px;
+    border: 1px solid #d5e5d5;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 16px;
+    background: #fafafa;
+    align-items: flex-start;
+}
+
+
+.productImg {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #d5e5d5;
+    background: #fff;
+    overflow: hidden;
+}
+
+.productImg img {
+    height: 100%;
+    width: 100%;
+}
+
+.details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailsTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details h6 {
+    /* font-size: 25px; */
+    font-size: 28px;
+    font-weight: 500;
+    color: #275140;
+    font-family: "Raleway", sans-serif;
+}
+
+.details h6 span {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #275140;
+}
+
+.category {
+    color: #a38d66;
+}
+
+.removeBtn {
+    border: none;
+    background: #d5e5d5;
+    color: #275140;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 50%;
+    transition: 0.3s;
+    padding: 2px;
+
+}
+
+.removeBtn:hover {
+    color: #dc2626;
+}
+
+.metaInfo {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+}
+
+.metaInfo strong {
+    color: #275140;
+}
+
+.metaInfo span {
+    color: #275140;
+    font-weight: 500;
+}
+
+.offer {
+    color: #f97316;
+    font-weight: 500;
+}
+
+.detailsBottom {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-top: auto;
+    gap: 20px;
+}
+
+.qtyControl {
+    display: flex;
+    align-items: center;
+    color: #275140;    
+    margin: 10px 0px 0px 0px;
+}
+
+.qtyControl button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #d5e5d5;
+    border-radius: 5px;
+    background: #d5e5d5;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #275140;
+}
+
+.qtyControl button:hover {
+    background: #275140;
+    color: #fff;
+}
+
+.qtyControl span {
+    min-width: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.priceBlock {
+    text-align: right;
+    font-family: "Poppins", sans-serif;
+    /* text-align: right;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse; */
+
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 400;
+    color: #275140;
+}
+
+.mrp {
+    font-size: 14px;
+    color: #777;
+}
+
+.mrp span {
+    text-decoration: line-through;
+}
+
+.save {
+    font-size: 13px;
+    color: #16a34a;
+    font-weight: 500;
+}
