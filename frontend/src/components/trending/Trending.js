@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Styles from './trending.module.css'
 export default function Trending({props}) {
-    console.log(props);
+    // console.log(props);
     
     const { scrollScale, circle, labelWrapper, label } = Styles;
 
