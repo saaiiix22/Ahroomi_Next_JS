@@ -65,7 +65,7 @@ export default function BestSelling() {
     return (
         <div>
             <SectionHeading props={'Best Sellers'} />
-            <div className='p-8 flex gap-10 justify-center'>
+            <div className='p-8 flex gap-10 justify-center flex-wrap'>
 
                 {
                     data.map((i, index) => {
