@@ -64,7 +64,7 @@ export default function BestSelling() {
     ]
     return (
         <div>
-            <SectionHeading props={'Best Sellers'}/>
+            <SectionHeading props={'Best Sellers'} />
             <div className='p-8 flex gap-10 justify-center'>
 
                 {
@@ -73,7 +73,6 @@ export default function BestSelling() {
                             <Link className={card} key={index} href={`/productdetails`}>
                                 <nav className={nav}>
                                     {i.nameOfPRoduct} {i.quantityOfPoduct}
-                                    <div className={heart}></div>
                                 </nav>
                                 <div className='flex'>
                                     <div className={photo}>

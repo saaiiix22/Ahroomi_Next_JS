@@ -31,7 +31,7 @@ export default function Navbar() {
               onMouseEnter={() => setShowMegaMenu(true)}
               onMouseLeave={() => setShowMegaMenu(false)}
             >
-              <button type="button">Shop</button>
+              <Link href={'/shop'} >Shop</Link>
 
               {showMegaMenu && (
                 <div className="absolute left-0 top-full w-[800px]">

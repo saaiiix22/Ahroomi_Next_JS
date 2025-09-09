@@ -1,5 +1,5 @@
 import Styles from './featuredProduct.module.css'
-export default function FeaturedProduct() {
+export default function FeaturedProduct({props}) {
     const {
         elWrapper,
         boxUp,
@@ -22,15 +22,17 @@ export default function FeaturedProduct() {
         <div className={elWrapper}>
             
             <div className={boxUp}>
+                
                 <img
                     className={img}
-                    src="https://setmycart.blob.core.windows.net/smcproduction//7-23-2025/aa37d6e3c3f24dcdaf82524df8c63161/DESIRE_100_ML_1.jpg"
+                    src={props.productImg}
                     alt="Product"
                 />
+                
                 <div className={imgInfo}>
                     <div className={infoInner}>
-                        <span className={pName}>Desire</span>
-                        <span className={pCompany}>Fragnances By AHroomi</span>
+                        <span className={pName}>{props.productName}</span>
+                        <span className={pCompany}>{props.productCategory} By AHroomi</span>
                     </div>
                     <div className={aSize}>
                         Available In : <span className={size}>10 ml</span>  <span className={size}>100 ml</span>
@@ -44,7 +46,7 @@ export default function FeaturedProduct() {
                 </div>
 
                 <a className={cart} href="#">
-                    <span className={price}>₹550</span>
+                    <span className={price}>₹{props.productPrice}</span>
                     <span className={addToCart}>
                         <span className={txt}>Add in cart</span>
                     </span>

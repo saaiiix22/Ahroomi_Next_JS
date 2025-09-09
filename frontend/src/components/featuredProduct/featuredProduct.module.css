@@ -1,10 +1,11 @@
 .elWrapper {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     padding: 15px;
-    /* margin: 15px auto; */
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease;
 }
 
 @media (max-width: 991px) {
@@ -52,9 +53,7 @@
 
 .elWrapper:hover .txt {
     opacity: 1;
-    /* show on hover */
     transition-delay: 0.2s;
-    /* slight delay after hover */
 }
 
 .boxDown {
@@ -66,7 +65,6 @@
 
 .boxUp {
     width: 100%;
-    /* height: 300px; */
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -152,7 +150,6 @@
     left: 0;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    /* background-color: #d5e5d596; */
     background-color: #ede8e29e;
 }
 
@@ -165,8 +162,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* font-size: 16px;
-    color: #252525; */
     font-size: 18px;
     z-index: 50;
     color: #275140;
@@ -190,10 +185,57 @@
     text-transform: uppercase;
     white-space: nowrap;
     opacity: 0;
-    /* hidden initially */
     z-index: 100;
-    /* above greens and blur */
     position: relative;
-    /* so z-index works */
     transition: opacity 0.4s ease;
+}
+/* Medium devices (tablets) */
+@media (max-width: 991px) {
+    .elWrapper {
+        max-width: 45%;
+        margin: 15px auto;
+    }
+}
+
+/* Small devices (mobiles) */
+@media (max-width: 767px) {
+    .elWrapper {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .pName {
+        font-size: 16px;
+    }
+
+    .pCompany {
+        font-size: 11px;
+    }
+
+    .aSize {
+        font-size: 13px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .txt {
+        font-size: 11px;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 480px) {
+    .elWrapper {
+        padding: 12px;
+    }
+
+    .pName {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
 }
