@@ -8,8 +8,8 @@
 }
 
 .mainImageWrapper {
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     border: 1px solid #d5e5d5;
     display: flex;
     align-items: center;
