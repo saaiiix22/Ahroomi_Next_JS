@@ -69,8 +69,7 @@ export default function ReviewCustomer() {
                 autoPlaySpeed={2000}
                 keyBoardControl={true}
                 customTransition="transform 0.8s ease-in-out"
-                // customTransition="all .5"
-                transitionDuration={500}
+                transitionDuration={5000}
                 containerClass="carousel-container"
                 arrows={false}
                 dotListClass={`${Styles.dotList}`}

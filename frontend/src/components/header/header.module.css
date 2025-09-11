@@ -1,7 +1,8 @@
 .headerWeb {
-    background-color: #D5E5D5;
+    /* background-color: #D5E5D5; */
+    background-color: #f7d540;
     padding: 7px;
-    overflow: hidden; 
+    overflow: hidden;
     text-align: center;
     position: relative;
 }
@@ -20,6 +21,7 @@
     gap: 35px;
     white-space: nowrap;
     animation: scrollText 22s linear infinite;
+    color: #12261e;
 }
 
 .headerText li {
@@ -39,10 +41,12 @@
     left: -12px;
     top: 7px;
 }
+
 @keyframes scrollText {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-100%);
     }

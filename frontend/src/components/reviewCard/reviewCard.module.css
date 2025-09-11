@@ -1,75 +1,78 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 .card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: rgb(149 157 165 / 7%) 0px 8px 24px;
-    border: 1px solid #d5e5d56e;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+    border: 1px solid #e0ede0;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin: 10px 10px;
-    font-family: "Raleway", sans-serif;
+    justify-content: space-between;
+    gap: 15px;
+    margin-right: 30px;
+    margin-top: 30px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.imgParent {
-    padding: 15px;
-    border-radius: 22px 20px 0px 0px;
+
+.heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #275140;
+    border-left: 4px solid #c2a878;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    max-height: calc(1.6em * 3);
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid #e0ede0;
+    padding-top: 15px;
     position: relative;
-}
-
-.imgParent::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-image: url(/images/reviewBg.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .5;
-    border-radius: 22px 20px 0px 0px;
+    padding: 8px 14px;
+    background-color: #e0ede0;
+    border-radius: 0px 0px 12px 12px;
 }
 
 .avatar {
     border-radius: 50%;
-    z-index: 22;
-    position: relative;
-
+    border: 2px solid #275140;
 }
 
-.heading {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #275140;
+.userInfo {
+    display: flex;
+    flex-direction: column;
 }
 
-.text {
+.userInfo strong {
     font-size: 14px;
-    line-height: 1.4;
-    text-align: justify;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
-
-.footer {
-    margin-top: auto;
-    font-size: 0.85rem;
-    color: gray;
-    text-align: end;
-    text-transform: capitalize;
-}
-
-.footer strong {
+    font-weight: 600;
     color: #275140;
 }
 
-.footer span {
-    color: #a1b9a1;
+.userInfo span {
+    font-size: 13px;
+    color: #888;
+    text-transform: capitalize;
 }

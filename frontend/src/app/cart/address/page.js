@@ -207,24 +207,24 @@ export default function AddressPage() {
                   color="inherit"
                   disabled={activeStep === 0}
                   onClick={handleBack}
-                  sx={{ mr: 1 }}
+                  sx={{ mr: 1, color:"#275140" }}
                 >
                   Back
                 </Button>
                 <Box sx={{ flex: "1 1 auto" }} />
-                <Button onClick={handleNext} sx={{ mr: 1 }}>
+                <Button onClick={handleNext} sx={{ mr: 1, color:"#275140" }}>
                   Next
                 </Button>
                 {activeStep !== steps.length &&
                   (completed[activeStep] ? (
                     <Typography
                       variant="caption"
-                      sx={{ display: "inline-block" }}
+                      sx={{ display: "inline-block", color:"#275140", fontSize:'14px', marginTop:'5px' }}
                     >
                       Step {activeStep + 1} already completed
                     </Typography>
                   ) : (
-                    <Button onClick={handleComplete}>
+                    <Button onClick={handleComplete} sx={{color:"#275140"}}>
                       {completedSteps() === totalSteps() - 1
                         ? "Finish"
                         : "Complete Step"}

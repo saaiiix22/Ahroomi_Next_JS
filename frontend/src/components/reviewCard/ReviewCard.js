@@ -4,14 +4,14 @@ import Styles from './reviewCard.module.css';
 export default function ReviewCard({ img, name, address, heading, text }) {
     return (
         <div className={Styles.card}>
-            <div className={Styles.imgParent}>
-                <Image src={img} alt={name} className={Styles.avatar} height={70} width={70}/>
-            </div>
             <h3 className={Styles.heading}>{heading}</h3>
-            <p className={Styles.text}>{text}</p>
+            <p className={Styles.text}>“{text}”</p>
             <div className={Styles.footer}>
-                <strong>{name}</strong>
-                <span className='block'>{address}</span>
+                <Image src={img} alt={name} className={Styles.avatar} height={50} width={50}/>
+                <div className={Styles.userInfo}>
+                    <strong>{name}</strong>
+                    <span>{address}</span>
+                </div>
             </div>
         </div>
     );
