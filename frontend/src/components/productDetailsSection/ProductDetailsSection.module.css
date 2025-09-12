@@ -33,8 +33,9 @@
 .ratingPriceRow {
     display: flex;
     align-items: center;
-    justify-content: start;
-    gap: 85px;
+    /* justify-content: start; */
+    justify-content: space-between;
+    /* gap: 85px; */
     margin-top: -12px;
 }
 
@@ -140,9 +141,29 @@
     color: #275140;
 }
 
-.shareBtn{
+.shareBtn {
     padding: 9px;
     background: #d5e5d5;
     color: #275140;
     border-radius: 50%;
+}
+
+.bottleSize {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottleSize label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #a38d66;
+}
+
+.bottleSize button {
+    padding: 3px 10px;
+    background-color: #275140;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 4px;
 }
