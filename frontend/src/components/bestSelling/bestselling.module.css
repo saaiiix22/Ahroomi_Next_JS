@@ -86,10 +86,11 @@
 
 .descriptionH1 {
     /* color: #515151; */
-    color: #275140;
+    /* color: #275140; */
+    color: #f97316;
     font-weight: 300;
-    padding-top: 15px;
-    margin: 0;
+    /* padding-top: 15px; */
+    margin: 14px 0px 0px 0px;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
 }
@@ -97,7 +98,8 @@
 .descriptionH1 span {
     font-size: 16px;
     margin-right: 5px;
-    color: #428168;
+    /* color: #428168; */
+    color: #f97316;
 }
 
 .descriptionH2 {
@@ -122,7 +124,8 @@
     line-height: 20px;
     /* color: #727272; */
     color: #275140;
-    padding: 20px 0;
+    padding: 15px 0;
+    text-align: justify;
     margin: 0;
 }
 
@@ -170,7 +173,7 @@
     border: 1px solid #a8160c;
     color: #a8160c;
     cursor: pointer;
-    background-color:#a8160c45;
+    background-color: #a8160c45;
 }
 
 

@@ -51,7 +51,8 @@
     padding-top: 15px;
     position: relative;
     padding: 8px 14px;
-    background-color: #e0ede0;
+    /* background-color: #e0ede0; */
+    background-color: #ffe368;
     border-radius: 0px 0px 12px 12px;
 }
 
@@ -73,6 +74,7 @@
 
 .userInfo span {
     font-size: 13px;
-    color: #888;
+    /* color: #888; */
+    color: #555;
     text-transform: capitalize;
 }

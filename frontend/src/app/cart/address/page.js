@@ -49,6 +49,15 @@ export default function AddressPage() {
             <h3 className={Styles.stepTitle}>Step 1: Add Address</h3>
             <form className={Styles.form}>
               <div className="grid grid-cols-12 gap-5 justify-center">
+                <div className="col-span-4">
+                  <input type="text" placeholder="Name" />
+                </div>
+                <div className="col-span-4">
+                  <input type="text" placeholder="Email" />
+                </div>
+                <div className="col-span-4">
+                  <input type="text" placeholder="Phone" />
+                </div>
                 <div className="col-span-12">
                   <input type="text" placeholder="Street" />
                 </div>
@@ -68,7 +77,7 @@ export default function AddressPage() {
                   <input type="text" placeholder="Building / Apartment Number" />
                 </div>
                 <div className="col-span-12 flex justify-center">
-                  <button type="submit" className={Styles.saveBtn}>
+                  <button type="submit" className={Styles.saveBtn} onClick={handleComplete}>
                     Save Address
                   </button>
                 </div>
@@ -83,6 +92,15 @@ export default function AddressPage() {
             <p className={Styles.confirmText}>Please confirm your entered address before proceeding. *</p>
             <form className={Styles.form}>
               <div className="grid grid-cols-12 gap-5 justify-center">
+                <div className="col-span-4">
+                  <input type="text" placeholder="Name" value="Prasanta Kumar Singh"  readOnly/>
+                </div>
+                <div className="col-span-4">
+                  <input type="text" placeholder="Email" value="prasanta22@gmail.com" readOnly />
+                </div>
+                <div className="col-span-4">
+                  <input type="text" placeholder="Phone" value="+91 1234567890" readOnly />
+                </div>
                 <div className="col-span-12">
                   <input type="text" placeholder="Street" value="Unit-4, Ashok Nagar" readOnly />
                 </div>
@@ -101,7 +119,7 @@ export default function AddressPage() {
                 <div className="col-span-4">
                   <input type="text" placeholder="Building / Apartment Number" value="Flat 302, Sai Residency" readOnly />
                 </div>
-                <div className="col-span-12 flex justify-center">
+                <div className="col-span-12 flex justify-center" onClick={handleComplete}>
                   <button type="submit" className={Styles.saveBtn}>
                     Confirm Address
                   </button>
@@ -144,7 +162,7 @@ export default function AddressPage() {
                 </div>
 
                 <div className="col-span-12 flex justify-center">
-                  <button type="submit" className={Styles.saveBtn}>
+                  <button type="submit" className={Styles.saveBtn} onClick={handleComplete} >
                     Confirm Payment
                   </button>
                 </div>
@@ -187,13 +205,9 @@ export default function AddressPage() {
         <div>
           {allStepsCompleted() ? (
             <React.Fragment>
-              <Typography sx={{ mt: 2, mb: 1 }}>
+              <Typography sx={{ mt: 2, mb: 1, color: "#275140" }}>
                 All steps completed – you&apos;re finished
               </Typography>
-              <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-                <Box sx={{ flex: "1 1 auto" }} />
-                <Button onClick={handleReset}>Reset</Button>
-              </Box>
             </React.Fragment>
           ) : (
             <React.Fragment>
@@ -212,23 +226,19 @@ export default function AddressPage() {
                   Back
                 </Button>
                 <Box sx={{ flex: "1 1 auto" }} />
-                <Button onClick={handleNext} sx={{ mr: 1 }}>
+                <Button onClick={handleNext} sx={{ mr: 1, color: "#275140" }}>
                   Next
                 </Button>
                 {activeStep !== steps.length &&
                   (completed[activeStep] ? (
                     <Typography
                       variant="caption"
-                      sx={{ display: "inline-block" }}
+                      sx={{ display: "inline-block", color: "#fff", background: "#f97316", padding: "5px 14px", borderRadius: "3px", display: "flex", justifyContent: "center", alignItems: "center" }}
                     >
                       Step {activeStep + 1} already completed
                     </Typography>
                   ) : (
-                    <Button onClick={handleComplete}>
-                      {completedSteps() === totalSteps() - 1
-                        ? "Finish"
-                        : "Complete Step"}
-                    </Button>
+                    ""
                   ))}
               </Box>
             </React.Fragment>

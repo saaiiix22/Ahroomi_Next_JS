@@ -1,5 +1,5 @@
 .addressWrapper {
-    padding: 20px;
+    padding: 18px 20px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -29,7 +29,8 @@
 }
 
 .form input {
-    padding: 12px 14px;
+    /* padding: 12px 14px; */
+    padding:11px 14px;
     border: 1px solid #d5e5d5;
     border-radius: 8px;
     font-size: 14px;
@@ -67,18 +68,20 @@
     top: 32px;
     color: #f00;
 }
+
 .selectInput {
-  padding: 12px 14px;
-  border: 1px solid #d5e5d5;
-  border-radius: 8px;
-  font-size: 14px;
-  background: #fdfdfd;
-  transition: all 0.2s ease-in-out;
-  outline: none;
-  width: 100%;
+    /* padding: 12px 14px; */
+    padding: 11px 14px;
+    border: 1px solid #d5e5d5;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #fdfdfd;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    width: 100%;
 }
 
 .selectInput:focus {
-  border-color: #648364;
-  box-shadow: 0 0 0 2px rgba(39, 81, 64, 0.2);
+    border-color: #648364;
+    box-shadow: 0 0 0 2px rgba(39, 81, 64, 0.2);
 }
