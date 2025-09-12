@@ -32,7 +32,7 @@ export default function ProductDetailsSection() {
     ];
 
     const visibleDetails = showAll ? details : details.slice(0, 3);
-    
+
 
 
     return (
@@ -74,7 +74,11 @@ export default function ProductDetailsSection() {
 
             </div>
 
-
+            <div className={Styles.bottleSize}>
+                <label htmlFor="">Available Sizes :</label>
+                <button>10 ML</button>
+                <button>100 ML</button>
+            </div>
 
             <h3 className={Styles.detailsHeading}>Product Details</h3>
             <div className={Styles.detailsWrapper}>

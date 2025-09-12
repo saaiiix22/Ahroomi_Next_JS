@@ -126,3 +126,23 @@
     background-color: #fff;
     border-radius: 50%;
 }
+
+.navigatorBtn {
+    width: 100%;
+    padding: 3px 0px;
+    color: #275140;
+    border: 1px solid #d5e5d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 3px;
+    background-color: #d5e5d5;
+    transition: all 0.2s ease;
+}
+
+.navigatorBtn:hover {
+    background: #153a2b;
+    color: #fff;
+}
