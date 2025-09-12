@@ -51,7 +51,8 @@
     padding-top: 15px;
     position: relative;
     padding: 8px 14px;
-    background-color: #e0ede0;
+    /* background-color: #e0ede0; */
+    background-color: #ffe367;
     border-radius: 0px 0px 12px 12px;
 }
 
@@ -66,13 +67,15 @@
 }
 
 .userInfo strong {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: #275140;
 }
 
 .userInfo span {
-    font-size: 13px;
-    color: #888;
+    /* font-size: 13px; */
+    font-size: 12px;
+    /* color: #888; */
+    color: #6a6a6a;
     text-transform: capitalize;
 }

@@ -7,7 +7,7 @@ import Navbar from '@/components/navbar/Navbar'
 import Header from '@/components/header/Header'
 
 export const metadata = {
-  title: 'My App',
+  title: 'Ahroomi',
   description: 'Your app description',
 }
 

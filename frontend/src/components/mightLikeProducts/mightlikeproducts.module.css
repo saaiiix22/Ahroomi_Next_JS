@@ -1,5 +1,6 @@
 .mightLikeProducts {
     margin-top: 30px;
+    position: relative;
 }
 
 .text {
@@ -22,4 +23,17 @@
     background-image: url(/images/borderBottom.png);
     background-position: center;
     background-size: contain;
+}
+
+.viewAll {
+    position: absolute;
+    top: 60px;
+    right: 6px;
+    background-color: #f97316;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    border-radius: 2px;
+    padding: 3px 16px;
 }
