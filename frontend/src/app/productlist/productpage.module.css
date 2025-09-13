@@ -1,0 +1,91 @@
+.homeContainer {
+    width: 1500px;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.sidebar {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 16px;
+    height: fit-content;
+}
+
+.filterTitle {
+    font-weight: 600;
+    font-size: 16px;
+    color: #275140;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.filterOptions {
+    margin-bottom: 20px;
+}
+
+.checkboxWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    margin-right: 8px;
+    accent-color: #275140;
+}
+
+.checkbox+label {
+    font-size: 14px;
+    color: #275140;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+/* Price Section */
+.priceInputs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.priceInputs div {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceInputs label {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.priceInputs input {
+    width: 80px;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.priceDash {
+    font-size: 16px;
+    font-weight: 600;
+    color: #275140;
+    margin-top: 22px;
+}
+
+.range {
+    width: 100%;
+    margin: 8px 0;
+    accent-color: #275140;
+}
+
+.discountText {
+    font-size: 13px;
+    color: #275140;
+}
