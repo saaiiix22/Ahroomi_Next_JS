@@ -2,9 +2,41 @@ import Styles from './orderConfirm.module.css'
 export default function Page() {
     return (
         <div className={Styles.confirmation}>
-            <div className={Styles.confirmWrapper}>
+            {/* <div className={Styles.confirmWrapper}>
                 <img src="/images/confirm.png" alt="Success" />
-            </div>
+            </div> */}
+            <svg
+                width="115px"
+                height="115px"
+                viewBox="0 0 133 133"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{fill:"none"}}
+            >
+                <g className={Styles.checkGroup}>
+                    <circle fill="#07b481" cx="66.5" cy="66.5" r="54.5" />
+                    <circle
+                        className={Styles.whiteCircle}
+                        fill="#FFFFFF"
+                        cx="66.5"
+                        cy="66.5"
+                        r="55.5"
+                    />
+                    <circle
+                        className={Styles.outline}
+                        stroke="#07b481"
+                        strokeWidth="4"
+                        cx="66.5"
+                        cy="66.5"
+                        r="54.5"
+                    />
+                    <polyline
+                        className={Styles.check}
+                        stroke="#FFFFFF"
+                        strokeWidth="5.5"
+                        points="41 70 56 85 92 49"
+                    />
+                </g>
+            </svg>
             <h2 className={Styles.thankyou}>Thank you for your purchase</h2>
             <p className={Styles.info}>
                 We've received your order and it will ship in 5-7 business days. <br />
