@@ -8,10 +8,13 @@ import StepButton from "@mui/material/StepButton";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import StepLabel from "@mui/material/StepLabel";
+import { useRouter } from "next/navigation";
 
 const steps = ["Add Address", "Confirm Details", "Select Payment Menthod"];
 
 export default function AddressPage() {
+
+
   const [activeStep, setActiveStep] = React.useState(0);
   const [completed, setCompleted] = React.useState({});
 
@@ -39,6 +42,13 @@ export default function AddressPage() {
   const handleReset = () => {
     setActiveStep(0);
     setCompleted({});
+  };
+
+  const router = useRouter();
+  const handlePaymentConfirm = (e) => {
+    e.preventDefault();
+    setCompleted({ ...completed, [activeStep]: true });
+    router.push("/orderconfirm");
   };
 
   const getStepContent = (step) => {
@@ -93,7 +103,7 @@ export default function AddressPage() {
             <form className={Styles.form}>
               <div className="grid grid-cols-12 gap-5 justify-center">
                 <div className="col-span-4">
-                  <input type="text" placeholder="Name" value="Prasanta Kumar Singh"  readOnly/>
+                  <input type="text" placeholder="Name" value="Prasanta Kumar Singh" readOnly />
                 </div>
                 <div className="col-span-4">
                   <input type="text" placeholder="Email" value="prasanta22@gmail.com" readOnly />
@@ -162,7 +172,7 @@ export default function AddressPage() {
                 </div>
 
                 <div className="col-span-12 flex justify-center">
-                  <button type="submit" className={Styles.saveBtn} onClick={handleComplete} >
+                  <button type="button" className={Styles.saveBtn} onClick={handlePaymentConfirm} >
                     Confirm Payment
                   </button>
                 </div>
@@ -205,9 +215,8 @@ export default function AddressPage() {
         <div>
           {allStepsCompleted() ? (
             <React.Fragment>
-              <Typography sx={{ mt: 2, mb: 1, color: "#275140" }}>
-                All steps completed – you&apos;re finished
-              </Typography>
+              {/* All steps completed – you&apos;re finished */}
+
             </React.Fragment>
           ) : (
             <React.Fragment>

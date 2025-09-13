@@ -4,6 +4,7 @@
     padding: 7px;
     overflow: hidden;
     text-align: center;
+    font-family: "Raleway", sans-serif;
     position: relative;
 }
 
@@ -39,7 +40,7 @@
     border-radius: 50%;
     background-color: #565656;
     left: -12px;
-    top: 7px;
+    top: 6px;
 }
 
 @keyframes scrollText {

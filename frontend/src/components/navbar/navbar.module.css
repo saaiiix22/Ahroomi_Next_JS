@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 
 .logoParent {
   width: 100%;
@@ -6,7 +8,8 @@
   justify-content: center;
   align-items: center;
 }
-.logoParent img{
+
+.logoParent img {
   width: 100px;
 }
 
@@ -35,6 +38,7 @@
   letter-spacing: 1px;
   word-spacing: 2px;
 }
+
 .navItem::before,
 .navItemWithSubmenu::before {
   content: "";
@@ -42,12 +46,13 @@
   left: 0;
   bottom: -6px;
   width: 100%;
-  height: 3px; 
+  height: 3px;
   background: #D5E5D5;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease-in-out;
 }
+
 .navItem:hover::before,
 .navItemWithSubmenu:hover::before {
   transform: scaleX(1);
@@ -154,4 +159,47 @@
 
 .searchSubmit i {
   font-size: 24px;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d5e5d5;
+  color: #12582b;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.iconWrapper:hover {
+  background: #12582b;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.cartWrapper {
+  position: relative;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #ff6800;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 999px;
+  height: 20px;
+  text-align: center;
+  line-height: 1;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
 }
