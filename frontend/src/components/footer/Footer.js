@@ -89,7 +89,7 @@ export default function Footer() {
             </div>
           </div>
           <div className='col-span-2'>
-            <div className="p-2 flex flex-col items-center">
+            <div className="flex flex-col items-center">
               <Image src='/images/nutritechLogo.png' alt='nutritechLogo' height={120} width={120} />
               <ul className={styles.lastLinks}>
                 <li className={styles.headLinkLast}>Also Visit</li>
@@ -102,6 +102,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        
       </div>
 
       <div className={styles.copyRight}>

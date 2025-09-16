@@ -1,0 +1,59 @@
+.sidebar {
+    background: #fff;
+    border-right: 1px solid #e8f1e8;
+    padding: 20px 10px;
+    font-family: "Raleway", sans-serif;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    margin-bottom: 6px;
+    color: #666;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0px 30px 30px 0px;
+    border-left: 2px solid #fff;
+}
+
+.navItem:hover {
+    background: #d5e5d5a2;
+    color: #275140;
+    border-color: #a7c1a7;
+}
+
+.icon {
+    font-size: 18px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    background: #a7c1a7;
+    padding: 7px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.text {
+    flex-grow: 1;
+}
+
+.badge {
+    background: #275140;
+    color: #fff;
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
 
@@ -60,8 +61,9 @@
 }
 
 .footerSocialLink ul li {
-  background-color: #d5e5d5;
-  color: #275140;
+  /* background-color: #d5e5d5; */
+  /* color: #275140; */
+  color: #d5e5d5;
   border-radius: 50%;
   height: 35px;
   width: 35px;
