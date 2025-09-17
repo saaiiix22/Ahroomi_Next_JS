@@ -26,7 +26,7 @@ export default function ProfileNavbar() {
     {
       icon: <RiLockPasswordLine />,
       navText: "Change password",
-      href: "/profile/password"
+      href: "/profile/changepassword"
     },
     {
       icon: <RiHome2Line />,

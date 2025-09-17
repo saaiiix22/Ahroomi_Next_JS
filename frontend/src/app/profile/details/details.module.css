@@ -48,12 +48,17 @@
 }
 
 /* Avatar */
-.avatar {
+.avatarWrapper{
     width: 70px;
     height: 70px;
+    padding: 5px;
+    border: 1px solid #a7c1a7;
+    border-radius: 50%;
+}
+.avatar {
+    width: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #ddd;
 }
 
 .uploadBtn {

@@ -70,7 +70,7 @@ export default function Navbar() {
           </form>
            <ul className="flex items-center gap-4 ml-4">
             <li>
-              <Link href="/homepage" className={styles.iconWrapper}>
+              <Link href="/" className={styles.iconWrapper}>
                 <MdHome />
               </Link>
             </li>

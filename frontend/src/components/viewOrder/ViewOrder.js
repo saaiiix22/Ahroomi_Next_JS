@@ -9,7 +9,7 @@ export default function ViewOrder() {
             <div className={Styles.containerActive}>
                 {/* Left Section */}
                 <div className={Styles.left}>
-                    <p className={Styles.status}>● Dispatched</p>
+                    <p className={Styles.status}>● On the way</p>
 
                     <div className={Styles.card}>
                         <img
@@ -49,7 +49,6 @@ export default function ViewOrder() {
 
 
             <div className={Styles.containerInActive}>
-                {/* Left Section */}
                 <div className={Styles.left}>
                     <p className={Styles.status}>● Delivered</p>
 
