@@ -3,6 +3,7 @@
     border-right: 1px solid #e8f1e8;
     padding: 20px 10px;
     font-family: "Raleway", sans-serif;
+    height: 100%;
 }
 
 .navList {
@@ -10,22 +11,23 @@
     padding: 0;
     margin: 0;
 }
-
-.navItem {
+.navItem{
+    background-color: transparent;
+}
+.navItem a{
     display: flex;
     align-items: center;
     padding: 12px 10px;
     margin-bottom: 6px;
     color: #666;
     font-size: 15px;
-    border-radius: 6px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     border-radius: 0px 30px 30px 0px;
     border-left: 2px solid #fff;
 }
 
-.navItem:hover {
+.navItem a:hover {
     background: #d5e5d5a2;
     color: #275140;
     border-color: #a7c1a7;
@@ -56,4 +58,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.active {
+    background: #d5e5d5a2;
+    color: #275140;
+    border-left: 2px solid #a7c1a7 !important;
+}
+.active .icon{
+    background-color: #275140;
+    columns: #fff;
 }

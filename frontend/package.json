@@ -20,7 +20,7 @@
     "next": "15.4.5",
     "primereact": "^10.9.6",
     "react": "19.1.0",
-    "react-datepicker": "^8.4.0",
+    "react-datepicker": "^8.7.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",
     "react-multi-carousel": "^2.8.6",

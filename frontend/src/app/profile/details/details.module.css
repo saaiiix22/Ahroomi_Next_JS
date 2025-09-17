@@ -1,0 +1,133 @@
+.profileWrapper {
+    max-width: 700px;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e8f1e8;
+    font-family: "Raleway", sans-serif;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #72a172;
+    font-weight: 500;
+    border-bottom: 1px solid #d8ebd8;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 10px;
+}
+
+.infoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.label {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #275140;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.value {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #275140;
+}
+
+/* Avatar */
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.uploadBtn {
+    background: #e4eee4;
+    padding: 0.35rem 0.9rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: #759175;
+    border: 1px solid #a7c1a7;
+    transition: background 0.2s;
+}
+
+.uploadBtn:hover {
+    background: #eaeaea;
+}
+
+/* Inputs */
+.value input {
+    padding: 0.45rem 0.6rem;
+    border: 1px solid #e8f1e8;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 250px;
+}
+
+.value input:focus {
+    border-color: #4caf50;
+}
+
+/* Button */
+.updateBtn {
+    padding: 0.55rem 1.2rem;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.updateBtn:hover {
+    background: #43a047;
+}
+
+.dateWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dateInput {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.dateInput:focus {
+    border-color: #0070f3;
+    box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+}
+
+.calendarIcon {
+    position: absolute;
+    right: 12px;
+    font-size: 18px;
+    color: #666;
+    pointer-events: none;
+}

@@ -1,6 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
 
-.container {
+.OrderHead {
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 15px;
+    color: #72a172;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+}
+
+.OrderHead span {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: #999999;
+}
+
+.containerActive {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,9 +23,24 @@
     border-radius: 0px 18px 18px 0px;
     padding: 16px;
     gap: 20px;
-    max-width: 700px;
+    /* max-width: 700px; */
     border-left: 2px solid #b2d5b2;
     font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+}
+
+.containerInActive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 0px 18px 18px 0px;
+    padding: 16px;
+    gap: 20px;
+    /* max-width: 700px; */
+    border-left: 2px solid #ccc;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
 }
 
 .left {
@@ -20,6 +50,13 @@
 .status {
     font-size: 14px;
     color: #4caf50;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.containerInActive .status {
+    font-size: 14px;
+    color: #8b8b8b;
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -46,6 +83,11 @@
     font-size: 14px;
     font-weight: 600;
     margin: 0;
+    color: #275140;
+}
+
+.title span {
+    font-family: "Poppins", sans-serif;
 }
 
 .time {
@@ -63,6 +105,17 @@
 
 .trackBtn {
     background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.OrderAgain {
+    background: #275140;
     color: white;
     border: none;
     padding: 10px 16px;
@@ -93,4 +146,10 @@
     background: #dddddd;
     border-radius: 3px;
     font-size: 12px;
+}
+.active {
+    background: #d5e5d5a2;
+    color: #275140;
+    border-color: #a7c1a7;
+    font-weight: 600;
 }
