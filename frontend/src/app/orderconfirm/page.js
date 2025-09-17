@@ -87,8 +87,6 @@ export default function Page() {
                 </p>
             </div>
 
-
-
             <Link href={'/'} className={Styles.homeBtn}>Back to Home</Link>
         </div>
     );
