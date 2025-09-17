@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Styles from './orderConfirm.module.css'
 
 export default function Page() {
@@ -88,7 +89,7 @@ export default function Page() {
 
 
 
-            <button className={Styles.homeBtn}>Back to Home</button>
+            <Link href={'/'} className={Styles.homeBtn}>Back to Home</Link>
         </div>
     );
 }

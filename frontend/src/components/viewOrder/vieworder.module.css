@@ -16,13 +16,10 @@
 }
 
 .containerActive {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     background: #d5e5d540;
     border-radius: 0px 18px 18px 0px;
     padding: 16px;
-    gap: 20px;
     /* max-width: 700px; */
     border-left: 2px solid #b2d5b2;
     font-family: "Raleway", sans-serif;
@@ -30,13 +27,10 @@
 }
 
 .containerInActive {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     background: #f1f1f1;
     border-radius: 0px 18px 18px 0px;
     padding: 16px;
-    gap: 20px;
     /* max-width: 700px; */
     border-left: 2px solid #ccc;
     font-family: "Raleway", sans-serif;
@@ -90,9 +84,9 @@
     font-family: "Poppins", sans-serif;
 }
 
-.time {
+.category {
     font-size: 13px;
-    color: #555;
+    color: #94815e;
     margin: 2px 0 0 0;
 }
 
@@ -100,7 +94,6 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-top: 18px;
 }
 
 .trackBtn {
@@ -147,9 +140,29 @@
     border-radius: 3px;
     font-size: 12px;
 }
+
 .active {
     background: #d5e5d5a2;
     color: #275140;
     border-color: #a7c1a7;
     font-weight: 600;
+}
+
+.orderId {
+    font-size: 13px;
+    color: #275140;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.orderId span {
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
